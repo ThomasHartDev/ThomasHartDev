@@ -109,7 +109,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
 
   <!-- tagline -->
   <text x="${W / 2}" y="292" text-anchor="middle" fill="${C.muted}"
-        font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" letter-spacing="1.5">Full-stack web · Next.js · TypeScript · Postgres · I ship, then I prove it.</text>
+        font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" letter-spacing="1.5">Full-stack web · Next.js · TypeScript · React · Node · Postgres</text>
 </svg>
 `;
 

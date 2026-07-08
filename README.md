@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="./assets/banner.svg?v=2" alt="Thomas Hart — Software Engineer, Subsecond Studio" width="100%" />
+<img src="./assets/banner.svg?v=3" alt="Thomas Hart — Software Engineer, Subsecond Studio" width="100%" />
 
 </div>
 
-Software engineer in Utah building full-stack web apps end to end: schema, API, UI, deploy. Most of my work is Next.js, TypeScript, and Postgres. I run [Subsecond Studio](https://subsecondstudio.com), where I ship small, fast, and prove it works before I call it done.
+Software engineer in Utah building full-stack web apps end to end: schema, API, UI, deploy. Most of my work is Next.js, TypeScript, and Postgres. I run [Subsecond Studio](https://subsecondstudio.com), building small, fast web products for clients.
 
 ### Currently
 
