@@ -1,0 +1,41 @@
+name: Update profile feed
+
+on:
+  schedule:
+    - cron: "17 13 * * *" # daily ~13:17 UTC
+  push:
+    branches: [main]
+    paths:
+      - "README.template.md"
+      - "scripts/update-feed.mjs"
+      - ".github/workflows/update-profile.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Regenerate README from latest blog posts
+        run: node scripts/update-feed.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet README.md; then
+            git add README.md
+            git commit -m "chore: refresh latest writing"
+            git push
+          else
+            echo "No change."
+          fi
