@@ -45,6 +45,13 @@ const ulX1 = wm.x0 - 4;
 const ulX2 = wm.x0 + wm.width + 4;
 const ulLen = ulX2 - ulX1;
 
+// Motion note: GitHub sanitizes README SVGs and does NOT run CSS @keyframes, but it
+// DOES run SMIL <animate> (same as the contribution snake). So every element is drawn
+// visible in its BASE state and SMIL only adds motion on top — the banner is fully
+// legible even where animation is frozen, and animates where SMIL is supported.
+const sweepX0 = wm.x0 - 260;
+const sweepX1 = wm.x0 + wm.width + 60;
+
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" role="img" aria-label="Thomas Hart — Software Engineer, Subsecond Studio">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
@@ -58,59 +65,50 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
     </radialGradient>
     <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.5"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="wmclip"><path d="${wm.d}"/></clipPath>
   </defs>
 
-  <style>
-    .rise { opacity: 0; transform: translateY(14px); animation: rise .9s cubic-bezier(.21,.47,.32,.98) .1s forwards; }
-    .eyebrow { opacity: 0; animation: fade .8s ease .05s forwards; }
-    .tag { opacity: 0; animation: fade .9s ease .5s forwards; }
-    .ul { stroke-dasharray: ${ulLen.toFixed(1)}; stroke-dashoffset: ${ulLen.toFixed(1)}; animation: draw 1.1s cubic-bezier(.21,.47,.32,.98) .55s forwards; }
-    .glow { animation: pulse 5s ease-in-out infinite; transform-origin: center; }
-    .sweep { animation: sweep 4.5s ease-in-out 1.2s infinite; }
-    .dot { animation: track 3.2s cubic-bezier(.5,0,.5,1) 1.4s infinite; }
-    @keyframes rise { to { opacity: 1; transform: translateY(0); } }
-    @keyframes fade { to { opacity: 1; } }
-    @keyframes draw { to { stroke-dashoffset: 0; } }
-    @keyframes pulse { 0%,100% { opacity: .45; } 50% { opacity: .7; } }
-    @keyframes sweep { 0% { transform: translateX(-40%); } 55%,100% { transform: translateX(140%); } }
-    @keyframes track { 0% { transform: translateX(0); opacity: 0; } 8% { opacity: 1; } 92% { opacity: 1; } 100% { transform: translateX(${(ulLen - 8).toFixed(0)}px); opacity: 0; } }
-    @media (prefers-reduced-motion: reduce) {
-      .rise,.eyebrow,.tag { opacity: 1; transform: none; animation: none; }
-      .ul { stroke-dashoffset: 0; animation: none; }
-      .glow,.sweep,.dot { animation: none; }
-      .sweep { opacity: 0; } .dot { opacity: 1; }
-    }
-  </style>
-
   <rect width="${W}" height="${H}" rx="18" fill="url(#bg)"/>
-  <ellipse class="glow" cx="${W / 2}" cy="200" rx="440" ry="150" fill="url(#glow)"/>
+
+  <!-- claret glow, gently pulsing -->
+  <ellipse cx="${W / 2}" cy="200" rx="440" ry="150" fill="url(#glow)" opacity="0.55">
+    <animate attributeName="opacity" values="0.45;0.72;0.45" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
 
   <!-- faint hairline frame -->
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>
 
   <!-- eyebrow -->
-  <text class="eyebrow" x="${W / 2}" y="88" text-anchor="middle" fill="${C.muted}"
+  <text x="${W / 2}" y="88" text-anchor="middle" fill="${C.muted}"
         font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="19" letter-spacing="7">SOFTWARE ENGINEER  ·  SUBSECOND STUDIO</text>
 
-  <!-- wordmark (Fraunces Black, baked to paths) + light sweep clipped to the letters -->
-  <g class="rise">
-    <path d="${wm.d}" fill="${C.ink}"/>
-    <g clip-path="url(#wmclip)">
-      <rect class="sweep" x="${wm.x0 - 30}" y="90" width="220" height="150" fill="url(#sweep)"/>
-    </g>
+  <!-- wordmark (Fraunces Black, baked to paths); a light sweep runs across the letters -->
+  <path d="${wm.d}" fill="${C.ink}"/>
+  <g clip-path="url(#wmclip)">
+    <rect x="${sweepX0.toFixed(0)}" y="90" width="200" height="150" fill="url(#sweep)">
+      <animate attributeName="x" from="${sweepX0.toFixed(0)}" to="${sweepX1.toFixed(0)}"
+               dur="4.5s" begin="1s;click+0.2s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
-  <!-- animated underline + a claret dot that runs its length (the "subsecond" beat) -->
-  <line class="ul" x1="${ulX1.toFixed(1)}" y1="${ulY}" x2="${ulX2.toFixed(1)}" y2="${ulY}"
-        stroke="${C.claret}" stroke-width="4" stroke-linecap="round"/>
-  <circle class="dot" cx="${ulX1.toFixed(1)}" cy="${ulY}" r="5" fill="${C.claretLite}"/>
+  <!-- underline draws once, then a claret dot keeps running its length -->
+  <line x1="${ulX1.toFixed(1)}" y1="${ulY}" x2="${ulX2.toFixed(1)}" y2="${ulY}"
+        stroke="${C.claret}" stroke-width="4" stroke-linecap="round"
+        stroke-dasharray="${ulLen.toFixed(1)}" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" from="${ulLen.toFixed(1)}" to="0"
+             dur="1.1s" begin="0.4s" fill="freeze"/>
+  </line>
+  <circle cx="${ulX1.toFixed(1)}" cy="${ulY}" r="5" fill="${C.claretLite}">
+    <animate attributeName="cx" values="${ulX1.toFixed(1)};${ulX2.toFixed(1)};${ulX1.toFixed(1)}"
+             dur="3.6s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" dur="3.6s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- tagline -->
-  <text class="tag" x="${W / 2}" y="292" text-anchor="middle" fill="${C.muted}"
+  <text x="${W / 2}" y="292" text-anchor="middle" fill="${C.muted}"
         font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" letter-spacing="1.5">Full-stack web · Next.js · TypeScript · Postgres · I ship, then I prove it.</text>
 </svg>
 `;
