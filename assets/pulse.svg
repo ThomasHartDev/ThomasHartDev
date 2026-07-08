@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" fill="none" role="img" aria-label="Subsecond Studio — built to load in under a second">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E1C2E"/>
+      <stop offset="1" stop-color="#091320"/>
+    </linearGradient>
+    <radialGradient id="pdot" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#D2586A"/>
+      <stop offset="60%" stop-color="#B23A48"/>
+      <stop offset="100%" stop-color="#B23A48" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="140" rx="18" fill="url(#pbg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="139" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>
+
+  <!-- faint full-width baseline -->
+  <line x1="40" y1="74" x2="1160" y2="74" stroke="#8FA1B6" stroke-opacity="0.14" stroke-width="2"/>
+
+  <!-- the latency trace: mostly flat with two quick spikes -->
+  <path d="M40 74 L300 74 L322 74 L340 40 L360 100 L380 74 L720 74 L742 74 L760 46 L780 96 L800 74 L1160 74"
+        stroke="#B23A48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+        stroke-opacity="0.5"/>
+
+  <!-- glowing pulse that runs the trace end to end -->
+  <g>
+    <circle r="16" fill="url(#pdot)" opacity="0.9">
+      <animateMotion dur="3.4s" begin="0s" repeatCount="indefinite" rotate="auto"
+        path="M40 74 L300 74 L322 74 L340 40 L360 100 L380 74 L720 74 L742 74 L760 46 L780 96 L800 74 L1160 74"/>
+    </circle>
+    <circle r="4.5" fill="#F3EDE3">
+      <animateMotion dur="3.4s" begin="0s" repeatCount="indefinite"
+        path="M40 74 L300 74 L322 74 L340 40 L360 100 L380 74 L720 74 L742 74 L760 46 L780 96 L800 74 L1160 74"/>
+    </circle>
+  </g>
+
+  <text x="600" y="120" text-anchor="middle" fill="#8FA1B6"
+        font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" letter-spacing="4">SUBSECOND STUDIO · BUILT TO LOAD IN UNDER A SECOND</text>
+</svg>

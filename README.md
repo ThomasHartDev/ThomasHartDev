@@ -41,5 +41,5 @@ More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 
 <div align="center">
   <br />
-  <img src="https://raw.githubusercontent.com/ThomasHartDev/ThomasHartDev/output/github-snake-dark.svg" alt="Contribution snake" width="100%" />
+  <img src="./assets/pulse.svg" alt="Subsecond Studio — built to load in under a second" width="100%" />
 </div>
