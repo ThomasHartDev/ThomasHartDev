@@ -20,6 +20,13 @@ Building [Subsecond Studio](https://subsecondstudio.com) and writing about the p
 
 More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 
+### Recently shipped
+
+<!-- RECENT_SHIP -->
+- [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Use your iPhone as a low-latency OBS camera source over your LAN. No app, no fee. &nbsp;·&nbsp; <sub>today</sub>
+- [turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit) — TypeScript &nbsp;·&nbsp; <sub>today</sub>
+<!-- /RECENT_SHIP -->
+
 ### Selected work
 
 - [Forbidden Street](https://thomas-hart.com/projects/forbidden-street) — brand and site build

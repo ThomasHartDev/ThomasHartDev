@@ -17,6 +17,11 @@ Building [Subsecond Studio](https://subsecondstudio.com) and writing about the p
 
 More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 
+### Recently shipped
+
+<!-- RECENT_SHIP -->
+<!-- /RECENT_SHIP -->
+
 ### Selected work
 
 - [Forbidden Street](https://thomas-hart.com/projects/forbidden-street) — brand and site build
