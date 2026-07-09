@@ -12,6 +12,10 @@ Software engineer in Utah building full-stack web apps end to end: schema, API, 
 
 Building [Subsecond Studio](https://subsecondstudio.com) and writing about the parts of solo product work that don't usually get written down: migrations, testing, cost, and where the time actually goes.
 
+### Wanna see something really cool?
+
+Click here: [Still A Website](https://stillawebsite.com)
+
 ### Latest writing
 
 <!-- LATEST_POSTS -->
