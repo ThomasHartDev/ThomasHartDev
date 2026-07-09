@@ -15,7 +15,7 @@ Building [Subsecond Studio](https://subsecondstudio.com) and writing about the p
 ### Latest writing
 
 <!-- LATEST_POSTS -->
-- [How I added a Quest 3 WebXR passthrough client to Next.js](https://thomas-hart.com/blog/quest-3-webxr-passthrough-nextjs-react-three-fiber) &nbsp;·&nbsp; <sub>Jul 2026</sub>
+- [Quest 3 Webxr Passthrough Nextjs React Three Fiber](https://thomas-hart.com/blog/quest-3-webxr-passthrough-nextjs-react-three-fiber) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 - [How I Handle Auth in Small SaaS Without Rolling My Own](https://thomas-hart.com/blog/handle-auth-small-saas-without-rolling-own) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 - [How I Set Up Real End-to-End Tests for Next.js with Playwright](https://thomas-hart.com/blog/real-end-to-end-tests-nextjs-playwright-chrome) &nbsp;·&nbsp; <sub>Jun 2026</sub>
 <!-- /LATEST_POSTS -->
