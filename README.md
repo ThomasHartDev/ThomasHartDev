@@ -4,6 +4,8 @@
 
 </div>
 
+<br />
+
 Software engineer in Utah building full-stack web apps end to end: schema, API, UI, deploy. Most of my work is Next.js, TypeScript, and Postgres. I run [Subsecond Studio](https://subsecondstudio.com), building small, fast web products for clients.
 
 ### Currently
@@ -24,7 +26,7 @@ More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 
 <!-- RECENT_SHIP -->
 - [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Use your iPhone as a low-latency OBS camera source over your LAN. No app, no fee. &nbsp;·&nbsp; <sub>today</sub>
-- [turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit) — TypeScript &nbsp;·&nbsp; <sub>today</sub>
+- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>today</sub>
 <!-- /RECENT_SHIP -->
 
 ### Selected work

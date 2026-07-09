@@ -4,6 +4,8 @@
 
 </div>
 
+<br />
+
 Software engineer in Utah building full-stack web apps end to end: schema, API, UI, deploy. Most of my work is Next.js, TypeScript, and Postgres. I run [Subsecond Studio](https://subsecondstudio.com), building small, fast web products for clients.
 
 ### Currently
