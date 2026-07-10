@@ -12,16 +12,12 @@ Software engineer in Utah building full-stack web apps end to end: schema, API, 
 
 Building [Subsecond Studio](https://subsecondstudio.com) and writing about the parts of solo product work that don't usually get written down: migrations, testing, cost, and where the time actually goes.
 
-### Wanna see something really cool?
-
-Click here: [Still A Website](https://stillawebsite.com)
-
 ### Latest writing
 
 <!-- LATEST_POSTS -->
-- [Quest 3 Webxr Passthrough Nextjs React Three Fiber](https://thomas-hart.com/blog/quest-3-webxr-passthrough-nextjs-react-three-fiber) &nbsp;·&nbsp; <sub>Jul 2026</sub>
-- [How I Handle Auth in Small SaaS Without Rolling My Own](https://thomas-hart.com/blog/handle-auth-small-saas-without-rolling-own) &nbsp;·&nbsp; <sub>Jul 2026</sub>
-- [How I Set Up Real End-to-End Tests for Next.js with Playwright](https://thomas-hart.com/blog/real-end-to-end-tests-nextjs-playwright-chrome) &nbsp;·&nbsp; <sub>Jun 2026</sub>
+- [React effects double-invoke under next dev: the prod-only bugs](https://thomas-hart.com/blog/react-effects-double-invoke-next-dev-prod-bugs) &nbsp;·&nbsp; <sub>Jul 2026</sub>
+- [How I Price and Scope a Freelance Next.js Project](https://thomas-hart.com/blog/price-scope-freelance-nextjs-project) &nbsp;·&nbsp; <sub>Jul 2026</sub>
+- [How I added a Quest 3 WebXR passthrough client to Next.js](https://thomas-hart.com/blog/quest-3-webxr-passthrough-nextjs-react-three-fiber) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 <!-- /LATEST_POSTS -->
 
 More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
@@ -29,8 +25,8 @@ More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 ### Recently shipped
 
 <!-- RECENT_SHIP -->
-- [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Use your iPhone as a low-latency OBS camera source over your LAN. No app, no fee. &nbsp;·&nbsp; <sub>today</sub>
 - [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>today</sub>
+- [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Use your iPhone as a low-latency OBS camera source over your LAN. No app, no fee. &nbsp;·&nbsp; <sub>today</sub>
 <!-- /RECENT_SHIP -->
 
 ### Selected work
