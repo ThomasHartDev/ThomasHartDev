@@ -25,8 +25,8 @@ More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 ### Recently shipped
 
 <!-- RECENT_SHIP -->
-- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>today</sub>
-- [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Use your iPhone as a low-latency OBS camera source over your LAN. No app, no fee. &nbsp;·&nbsp; <sub>today</sub>
+- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>yesterday</sub>
+- [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Use your iPhone as a low-latency OBS camera source over your LAN. No app, no fee. &nbsp;·&nbsp; <sub>yesterday</sub>
 <!-- /RECENT_SHIP -->
 
 ### Selected work
