@@ -25,8 +25,8 @@ More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 ### Recently shipped
 
 <!-- RECENT_SHIP -->
-- [front-end-conventions](https://github.com/ThomasHartDev/front-end-conventions) — TypeScript &nbsp;·&nbsp; <sub>3 days ago</sub>
-- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>5 days ago</sub>
+- [front-end-conventions](https://github.com/ThomasHartDev/front-end-conventions) — TypeScript &nbsp;·&nbsp; <sub>4 days ago</sub>
+- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>6 days ago</sub>
 <!-- /RECENT_SHIP -->
 
 ### Selected work
