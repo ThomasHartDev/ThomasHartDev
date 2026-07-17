@@ -6,6 +6,7 @@
   "description": "Self-updating GitHub profile README",
   "scripts": {
     "build:feed": "node scripts/update-feed.mjs",
+    "plan:pins": "node scripts/pin-repos.mjs",
     "build:banner": "node scripts/build-banner.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
