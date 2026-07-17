@@ -11,7 +11,7 @@ Software engineer in Utah building full-stack web apps end to end: schema, API, 
 ### Want to see something cool?
 
 > [!TIP]
-> **[stillawebsite.com](https://stillawebsite.com)** is a ~15 minute interactive experience that opens disguised as a dead 2009 website, then tears itself apart: a GPGPU particle organism, a paintable fluid simulation, typography with real physics, a raymarched world where scroll is time, and a 15 second arcade game. Every pixel is generated from code. It all runs in one browser tab.
+> **[stillawebsite.com](https://stillawebsite.com)** opens looking like a dead website from 2009. Give it a minute. It's about 15 minutes, best with sound on, and I'd rather not spoil what happens. Every pixel is generated from code, and all of it runs in a single browser tab.
 
 <div align="center">
   <br />
