@@ -8,6 +8,21 @@
 
 Software engineer in Utah building full-stack web apps end to end: schema, API, UI, deploy. Most of my work is Next.js, TypeScript, and Postgres. I run [Subsecond Studio](https://subsecondstudio.com), building small, fast web products for clients.
 
+### Want to see something cool?
+
+> [!TIP]
+> **[stillawebsite.com](https://stillawebsite.com)** is a ~15 minute interactive experience that opens disguised as a dead 2009 website, then tears itself apart: a GPGPU particle organism, a paintable fluid simulation, typography with real physics, a raymarched world where scroll is time, and a 15 second arcade game. Every pixel is generated from code. It all runs in one browser tab.
+
+<div align="center">
+  <br />
+
+[![Enter the experience → stillawebsite.com](https://img.shields.io/badge/%E2%96%B6%20Enter%20the%20experience-stillawebsite.com-B23A48?style=for-the-badge&labelColor=0E1C2E)](https://stillawebsite.com)
+
+<sub>Lighthouse 94 &nbsp;·&nbsp; accessibility 100 &nbsp;·&nbsp; zero layout shift &nbsp;·&nbsp; no stock, no video, all code</sub>
+
+  <br />
+</div>
+
 ### Currently
 
 Building [Subsecond Studio](https://subsecondstudio.com) and writing about the parts of solo product work that don't usually get written down: migrations, testing, cost, and where the time actually goes.
@@ -15,9 +30,9 @@ Building [Subsecond Studio](https://subsecondstudio.com) and writing about the p
 ### Latest writing
 
 <!-- LATEST_POSTS -->
+- [What I charge for Next.js work in Utah and how I scope it](https://thomas-hart.com/blog/next-js-pricing-scoping-utah) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 - [How I generate blog hero images without blowing the budget](https://thomas-hart.com/blog/generate-blog-hero-images-without-blowing-budget) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 - [React effects double-invoke under next dev: the prod-only bugs](https://thomas-hart.com/blog/react-effects-double-invoke-next-dev-prod-bugs) &nbsp;·&nbsp; <sub>Jul 2026</sub>
-- [How I Price and Scope a Freelance Next.js Project](https://thomas-hart.com/blog/price-scope-freelance-nextjs-project) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 <!-- /LATEST_POSTS -->
 
 More at [thomas-hart.com/blog](https://thomas-hart.com/blog).

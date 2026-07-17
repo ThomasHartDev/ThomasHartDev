@@ -8,6 +8,21 @@
 
 Software engineer in Utah building full-stack web apps end to end: schema, API, UI, deploy. Most of my work is Next.js, TypeScript, and Postgres. I run [Subsecond Studio](https://subsecondstudio.com), building small, fast web products for clients.
 
+### Want to see something cool?
+
+> [!TIP]
+> **[stillawebsite.com](https://stillawebsite.com)** is a ~15 minute interactive experience that opens disguised as a dead 2009 website, then tears itself apart: a GPGPU particle organism, a paintable fluid simulation, typography with real physics, a raymarched world where scroll is time, and a 15 second arcade game. Every pixel is generated from code. It all runs in one browser tab.
+
+<div align="center">
+  <br />
+
+[![Enter the experience → stillawebsite.com](https://img.shields.io/badge/%E2%96%B6%20Enter%20the%20experience-stillawebsite.com-B23A48?style=for-the-badge&labelColor=0E1C2E)](https://stillawebsite.com)
+
+<sub>Lighthouse 94 &nbsp;·&nbsp; accessibility 100 &nbsp;·&nbsp; zero layout shift &nbsp;·&nbsp; no stock, no video, all code</sub>
+
+  <br />
+</div>
+
 ### Currently
 
 Building [Subsecond Studio](https://subsecondstudio.com) and writing about the parts of solo product work that don't usually get written down: migrations, testing, cost, and where the time actually goes.
