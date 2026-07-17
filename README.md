@@ -15,9 +15,9 @@ Building [Subsecond Studio](https://subsecondstudio.com) and writing about the p
 ### Latest writing
 
 <!-- LATEST_POSTS -->
+- [How I generate blog hero images without blowing the budget](https://thomas-hart.com/blog/generate-blog-hero-images-without-blowing-budget) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 - [React effects double-invoke under next dev: the prod-only bugs](https://thomas-hart.com/blog/react-effects-double-invoke-next-dev-prod-bugs) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 - [How I Price and Scope a Freelance Next.js Project](https://thomas-hart.com/blog/price-scope-freelance-nextjs-project) &nbsp;·&nbsp; <sub>Jul 2026</sub>
-- [How I added a Quest 3 WebXR passthrough client to Next.js](https://thomas-hart.com/blog/quest-3-webxr-passthrough-nextjs-react-three-fiber) &nbsp;·&nbsp; <sub>Jul 2026</sub>
 <!-- /LATEST_POSTS -->
 
 More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
@@ -25,8 +25,8 @@ More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 ### Recently shipped
 
 <!-- RECENT_SHIP -->
-- [front-end-conventions](https://github.com/ThomasHartDev/front-end-conventions) — TypeScript &nbsp;·&nbsp; <sub>4 days ago</sub>
-- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>6 days ago</sub>
+- [airlock](https://github.com/ThomasHartDev/airlock) — Ephemeral, zero-credential, self-verifying execution for untrusted/agent code. A small TypeScript primitive. &nbsp;·&nbsp; <sub>today</sub>
+- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>7 days ago</sub>
 <!-- /RECENT_SHIP -->
 
 ### Selected work
