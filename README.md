@@ -37,11 +37,22 @@ Building [Subsecond Studio](https://subsecondstudio.com) and writing about the p
 
 More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 
+### Flagship repos
+
+Small, self-contained builds focused on the engineering itself. Each one takes a hard idea and makes it readable.
+
+<!-- FLAGSHIP -->
+- [event-broker-lab](https://github.com/ThomasHartDev/event-broker-lab) — In-memory message broker built from scratch: pub/sub, work queues, delivery guarantees, backpressure. The ideas behind Kafka and SQS, small enough to read.
+- [airlock](https://github.com/ThomasHartDev/airlock) — Ephemeral, zero-credential sandbox for running untrusted or agent-generated code, with self-verifying execution.
+- [image-processing](https://github.com/ThomasHartDev/image-processing) — Sharp-based optimizer that binary-searches encoder quality against an SSIM target, with perceptual scoring.
+- [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Turns an iPhone into a low-latency OBS camera over the LAN. No app, no fee.
+<!-- /FLAGSHIP -->
+
 ### Recently shipped
 
 <!-- RECENT_SHIP -->
-- [airlock](https://github.com/ThomasHartDev/airlock) — Ephemeral, zero-credential, self-verifying execution for untrusted/agent code. A small TypeScript primitive. &nbsp;·&nbsp; <sub>today</sub>
 - [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>7 days ago</sub>
+- [turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit) — TypeScript &nbsp;·&nbsp; <sub>8 days ago</sub>
 <!-- /RECENT_SHIP -->
 
 ### Selected work
