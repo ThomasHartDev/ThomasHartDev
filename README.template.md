@@ -34,6 +34,13 @@ Building [Subsecond Studio](https://subsecondstudio.com) and writing about the p
 
 More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 
+### Flagship repos
+
+Small, self-contained builds focused on the engineering itself. Each one takes a hard idea and makes it readable.
+
+<!-- FLAGSHIP -->
+<!-- /FLAGSHIP -->
+
 ### Recently shipped
 
 <!-- RECENT_SHIP -->
