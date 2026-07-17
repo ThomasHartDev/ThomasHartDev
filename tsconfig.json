@@ -11,5 +11,5 @@
     "checkJs": true,
     "skipLibCheck": true
   },
-  "include": ["scripts/feed-lib.mjs", "scripts/update-feed.mjs", "test"]
+  "include": ["scripts/feed-lib.mjs", "scripts/update-feed.mjs", "scripts/pin-lib.mjs", "scripts/pin-repos.mjs", "test"]
 }
