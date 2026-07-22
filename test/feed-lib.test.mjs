@@ -1,5 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
+  COURSEWORK,
+  courseworkNames,
   FLAGSHIP,
   flagshipNames,
   relDate,
@@ -36,6 +38,17 @@ describe("selectRecent", () => {
     const repos = [repo({ name: "airlock" }), repo({ name: "fresh" })];
     const out = selectRecent(repos, { exclude: flagshipNames(), count: 10 });
     expect(out.map((r) => r.name)).toEqual(["fresh"]);
+  });
+
+  it("skips old coursework so a chore commit can't surface it as recent work", () => {
+    const repos = [
+      repo({ name: "tweeter", pushed_at: "2026-07-22T00:00:00Z" }),
+      repo({ name: "turbo-agent-kit", pushed_at: "2026-07-21T00:00:00Z" }),
+    ];
+    const exclude = new Set([...flagshipNames(), ...courseworkNames()]);
+    const out = selectRecent(repos, { exclude, count: 2 });
+    expect(out.map((r) => r.name)).toEqual(["turbo-agent-kit"]);
+    expect(COURSEWORK).toContain("tweeter");
   });
 
   it("honors the count limit", () => {

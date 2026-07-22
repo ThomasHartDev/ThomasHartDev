@@ -51,6 +51,39 @@ export const FLAGSHIP = [
 
 const SELF = "ThomasHartDev";
 
+// Old university coursework. It's fine to have public, but a chore commit on one
+// of these shouldn't push it into "Recently shipped" ahead of real recent work,
+// so the auto feed and pin scorer skip them.
+/** @type {string[]} */
+export const COURSEWORK = [
+  "AES-Java",
+  "Computational-Theory",
+  "Computer-Security-Project-Reports",
+  "Creative-Web-Project",
+  "Design-Principle-Exercises-And-Notes",
+  "Diffie-Hellman-Project",
+  "EvilHangman",
+  "HashAttack",
+  "MAC-Attack",
+  "RSA-Project",
+  "SpellingCorrector",
+  "Testing-Verification-and-Analysis",
+  "algorithm-design-and-analysis",
+  "discrete-structures",
+  "family-map-application",
+  "operating-system-design",
+  "systems-programming",
+  "tweeter",
+  "y86-Lab",
+];
+
+/**
+ * @returns {Set<string>}
+ */
+export function courseworkNames() {
+  return new Set(COURSEWORK);
+}
+
 /**
  * Names already surfaced elsewhere on the profile, so the auto feed can skip them.
  * @param {Flagship[]} [list]
