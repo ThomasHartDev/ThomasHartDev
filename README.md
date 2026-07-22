@@ -6,13 +6,13 @@
 
 <br />
 
-Software engineer in Utah building full-stack web apps end to end: schema, API, UI, deploy. Most of my work is Next.js, TypeScript, and Postgres. I run [Subsecond Studio](https://subsecondstudio.com), building small, fast web products for clients.
+I'm a software engineer in Utah. I build full-stack web apps and usually own the whole thing, from the database schema up through the API and the UI to the deploy. Most of it is Next.js, TypeScript, and Postgres. I also run [Subsecond Studio](https://subsecondstudio.com), where I build small, fast web products for clients.
 
 ### Want to see something cool?
 
 > [!TIP]
 > <!-- STILLAWEBSITE -->
-> **[stillawebsite.com](https://stillawebsite.com)** opens as a quiet dark page, then slowly becomes something you have probably never used in a browser. A 15 minute experience. Then check the URL bar. Best with sound on. Every pixel is generated from code, all of it running in a single browser tab.
+> **[stillawebsite.com](https://stillawebsite.com)** opens as a quiet dark page and slowly turns into something you've probably never seen a browser do. Give it about fifteen minutes with the sound on, then look at the URL bar. All of it is generated from code in a single tab.
 > <!-- /STILLAWEBSITE -->
 
 <div align="center">
@@ -27,7 +27,7 @@ Software engineer in Utah building full-stack web apps end to end: schema, API, 
 
 ### Currently
 
-Building [Subsecond Studio](https://subsecondstudio.com) and writing about the parts of solo product work that don't usually get written down: migrations, testing, cost, and where the time actually goes.
+Building [Subsecond Studio](https://subsecondstudio.com). On the side I write about the parts of solo product work that don't usually get written down, like migrations, what testing is actually worth, and where the hours go.
 
 ### Latest writing
 
@@ -41,7 +41,7 @@ More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
 
 ### Flagship repos
 
-Small, self-contained builds focused on the engineering itself. Each one takes a hard idea and makes it readable.
+Small, self-contained projects where the point is the engineering. Each one takes something hard and keeps it short enough to read through in a sitting.
 
 <!-- FLAGSHIP -->
 - [event-broker-lab](https://github.com/ThomasHartDev/event-broker-lab) — In-memory message broker built from scratch: pub/sub, work queues, delivery guarantees, backpressure. The ideas behind Kafka and SQS, small enough to read.
