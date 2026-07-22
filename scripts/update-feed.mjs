@@ -45,6 +45,32 @@ async function recentlyShipped() {
   }
 }
 
+const STILLAWEBSITE_URL = "https://stillawebsite.com";
+
+// The stillawebsite.com blurb tracks the live site's own og:description so this
+// section can't drift again. It used to hardcode a "dead 2009 template" opening
+// that stopped being true the day the front door was redesigned into the modern
+// dark gate. Fail-soft: any fetch/parse miss returns null and the template's
+// static fallback (already accurate) stays in place.
+async function stillawebsiteBlurb() {
+  try {
+    const html = await fetchText(STILLAWEBSITE_URL);
+    const m =
+      html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i) ||
+      html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i);
+    const pitch = ((m && m[1]) || "").trim();
+    if (!pitch) return null;
+    return (
+      `**[stillawebsite.com](${STILLAWEBSITE_URL})** opens as a quiet dark page, ` +
+      `then slowly becomes something you have probably never used in a browser. ` +
+      `${pitch} Best with sound on. Every pixel is generated from code, all of it ` +
+      `running in a single browser tab.`
+    );
+  } catch {
+    return null;
+  }
+}
+
 /** @param {string} slug */
 function titleFromSlug(slug) {
   return slug
@@ -87,14 +113,21 @@ async function main() {
 
   const postBlock = items.join("\n");
   const shipBlock = renderRecent(await recentlyShipped());
+  const swBlurb = await stillawebsiteBlurb();
 
   const template = fs.readFileSync(path.join(root, "README.template.md"), "utf8");
-  const out = template
+  let out = template
     .replace(/(<!-- LATEST_POSTS -->)[\s\S]*?(<!-- \/LATEST_POSTS -->)/, `$1\n${postBlock}\n$2`)
     .replace(/(<!-- FLAGSHIP -->)[\s\S]*?(<!-- \/FLAGSHIP -->)/, `$1\n${renderFlagship()}\n$2`)
     .replace(/(<!-- RECENT_SHIP -->)[\s\S]*?(<!-- \/RECENT_SHIP -->)/, `$1\n${shipBlock}\n$2`);
+  if (swBlurb) {
+    out = out.replace(
+      /(<!-- STILLAWEBSITE -->)[\s\S]*?(<!-- \/STILLAWEBSITE -->)/,
+      `$1\n> ${swBlurb}\n> $2`
+    );
+  }
   fs.writeFileSync(path.join(root, "README.md"), out);
-  console.log(`injected ${items.length} posts, flagship, recently shipped`);
+  console.log(`injected ${items.length} posts, flagship, recently shipped, stillawebsite ${swBlurb ? "ok" : "fallback"}`);
 }
 
 main().catch((e) => {
