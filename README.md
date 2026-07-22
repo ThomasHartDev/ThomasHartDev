@@ -11,7 +11,9 @@ Software engineer in Utah building full-stack web apps end to end: schema, API, 
 ### Want to see something cool?
 
 > [!TIP]
-> **[stillawebsite.com](https://stillawebsite.com)** opens looking like a dead website from 2009. Give it a minute. It's about 15 minutes, best with sound on, and I'd rather not spoil what happens. Every pixel is generated from code, and all of it runs in a single browser tab.
+> <!-- STILLAWEBSITE -->
+> **[stillawebsite.com](https://stillawebsite.com)** opens as a quiet dark page, then slowly becomes something you have probably never used in a browser. A 15 minute experience. Then check the URL bar. Best with sound on. Every pixel is generated from code, all of it running in a single browser tab.
+> <!-- /STILLAWEBSITE -->
 
 <div align="center">
   <br />
@@ -51,8 +53,8 @@ Small, self-contained builds focused on the engineering itself. Each one takes a
 ### Recently shipped
 
 <!-- RECENT_SHIP -->
-- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — TypeScript &nbsp;·&nbsp; <sub>7 days ago</sub>
-- [turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit) — TypeScript &nbsp;·&nbsp; <sub>8 days ago</sub>
+- [turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit) — Turborepo + pnpm monorepo for building LLM agents in TypeScript: agent loop, pluggable providers, rate limiting (token bucket, sliding window, semaphore), Zod config, SSE streaming, and a Next.js console &nbsp;·&nbsp; <sub>today</sub>
+- [modern-frontend-lab](https://github.com/ThomasHartDev/modern-frontend-lab) — A living reference of modern front-end technique in Next.js 15 + React 19: Server Components, streaming SSR with Suspense, Server Actions, optimistic UI with useOptimistic, design tokens, Core Web Vitals, and accessibility, each demonstrated on its own route with tests. &nbsp;·&nbsp; <sub>yesterday</sub>
 <!-- /RECENT_SHIP -->
 
 ### Selected work
