@@ -61,10 +61,10 @@ async function stillawebsiteBlurb() {
     const pitch = ((m && m[1]) || "").trim();
     if (!pitch) return null;
     return (
-      `**[stillawebsite.com](${STILLAWEBSITE_URL})** opens as a quiet dark page, ` +
-      `then slowly becomes something you have probably never used in a browser. ` +
-      `${pitch} Best with sound on. Every pixel is generated from code, all of it ` +
-      `running in a single browser tab.`
+      `**[stillawebsite.com](${STILLAWEBSITE_URL})** opens as a quiet dark page and ` +
+      `slowly turns into something you've probably never seen a browser do. ${pitch} ` +
+      `Give it about fifteen minutes with the sound on, then look at the URL bar. ` +
+      `It's all generated from code in a single tab.`
     );
   } catch {
     return null;

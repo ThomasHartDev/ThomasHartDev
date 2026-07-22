@@ -28,7 +28,7 @@ export const FLAGSHIP = [
     name: "event-broker-lab",
     url: "https://github.com/ThomasHartDev/event-broker-lab",
     blurb:
-      "In-memory message broker built from scratch: pub/sub, work queues, delivery guarantees, backpressure. The ideas behind Kafka and SQS, small enough to read.",
+      "A message broker I built from scratch in memory, with publish/subscribe, work queues, delivery guarantees, and backpressure. It's the core of what Kafka and SQS do, shrunk down to something you can read in one sitting.",
   },
   {
     name: "airlock",
