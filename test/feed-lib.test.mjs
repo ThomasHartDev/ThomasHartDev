@@ -94,24 +94,26 @@ describe("renderRecent", () => {
     expect(renderRecent([])).toBe("");
   });
   it("prefers description, then language, then a generic note", () => {
-    const now = new Date("2026-01-02T00:00:00Z").getTime();
-    const lines = renderRecent(
-      [
-        repo({ name: "with-desc", description: "does a thing" }),
-        repo({ name: "lang-only", description: null, language: "Rust" }),
-        repo({ name: "bare", description: null, language: null }),
-      ],
-      now
-    ).split("\n");
+    const lines = renderRecent([
+      repo({ name: "with-desc", description: "does a thing" }),
+      repo({ name: "lang-only", description: null, language: "Rust" }),
+      repo({ name: "bare", description: null, language: null }),
+    ]).split("\n\n");
     expect(lines[0]).toContain("does a thing");
     expect(lines[1]).toContain("Rust");
     expect(lines[2]).toContain("recently pushed");
+  });
+  it("does not append relative dates", () => {
+    const out = renderRecent([repo({ name: "fresh", description: "shipped", pushed_at: "2026-01-02T00:00:00Z" })]);
+    expect(out).not.toContain("today");
+    expect(out).not.toContain("<sub>");
+    expect(out).toContain("**[fresh]");
   });
 });
 
 describe("renderFlagship", () => {
   it("emits one link line per repo with its blurb", () => {
-    const lines = renderFlagship().split("\n");
+    const lines = renderFlagship().split("\n\n");
     expect(lines).toHaveLength(FLAGSHIP.length);
     for (const f of FLAGSHIP) {
       expect(renderFlagship()).toContain(`[${f.name}](${f.url})`);
@@ -121,20 +123,26 @@ describe("renderFlagship", () => {
 
 describe("renderRecentProjects", () => {
   it("puts curated flagship first, then auto recent", () => {
-    const now = new Date("2026-01-02T00:00:00Z").getTime();
     const out = renderRecentProjects({
       flagship: [
         { name: "alpha", url: "https://x/alpha", blurb: "first" },
         { name: "beta", url: "https://x/beta", blurb: "second" },
       ],
       recent: [repo({ name: "fresh", description: "just shipped", pushed_at: "2026-01-02T00:00:00Z" })],
-      now,
     });
-    const lines = out.split("\n");
+    const lines = out.split("\n\n");
     expect(lines[0]).toContain("alpha");
     expect(lines[1]).toContain("beta");
     expect(lines[2]).toContain("fresh");
-    expect(lines[2]).toContain("today");
+    expect(out).not.toContain("today");
+  });
+
+  it("drops the long kafka/sqs and no-app blurbs from flagship copy", () => {
+    const out = renderFlagship();
+    expect(out).not.toContain("Kafka and SQS");
+    expect(out).not.toContain("No app, no fee");
+    expect(out).toContain("event-broker-lab");
+    expect(out).toContain("obs-phone-cam");
   });
 
   it("falls back to portfolio when both lists empty", () => {
