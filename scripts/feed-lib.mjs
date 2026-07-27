@@ -52,7 +52,7 @@ export const FLAGSHIP = [
 const SELF = "ThomasHartDev";
 
 /**
- * Names already surfaced elsewhere on the profile, so the auto feed can skip them.
+ * Names already surfaced as curated projects, so the auto feed can skip them.
  * @param {Flagship[]} [list]
  * @returns {Set<string>}
  */
@@ -77,7 +77,7 @@ function eligible(repo, exclude) {
 
 /**
  * Most recently pushed repos, minus forks/archived/private, the profile repo
- * itself, and anything already pinned as flagship (no duplicates across sections).
+ * itself, and anything already listed as curated (no duplicates).
  * @param {Repo[]} repos
  * @param {{ exclude?: Set<string>, count?: number }} [opts]
  * @returns {Repo[]}
@@ -120,11 +120,38 @@ export function renderFlagship(list = FLAGSHIP) {
  * @returns {string}
  */
 export function renderRecent(repos, now = Date.now()) {
-  if (!repos.length) return "- More on [thomas-hart.com](https://thomas-hart.com)";
+  if (!repos.length) return "";
   return repos
     .map((r) => {
       const blurb = r.description || r.language || "recently pushed";
       return `- [${r.name}](${r.html_url}) — ${blurb} &nbsp;·&nbsp; <sub>${relDate(r.pushed_at, now)}</sub>`;
     })
     .join("\n");
+}
+
+/**
+ * Single "Recent projects" block: curated flagship first, then freshly shipped.
+ * @param {{ flagship?: Flagship[], recent?: Repo[], now?: number }} [opts]
+ * @returns {string}
+ */
+export function renderRecentProjects(opts = {}) {
+  const flagship = opts.flagship ?? FLAGSHIP;
+  const recent = opts.recent ?? [];
+  const now = opts.now ?? Date.now();
+  const head = renderFlagship(flagship);
+  const tail = renderRecent(recent, now);
+  if (head && tail) return `${head}\n${tail}`;
+  if (head) return head;
+  if (tail) return tail;
+  return "- More on [thomas-hart.com](https://thomas-hart.com)";
+}
+
+/**
+ * Compact footer list of latest posts (or empty string when none).
+ * @param {{ title: string, url: string, date: string }[]} posts
+ * @returns {string}
+ */
+export function renderLatestPosts(posts) {
+  if (!posts.length) return "";
+  return posts.map((p) => `- [${p.title}](${p.url}) &nbsp;·&nbsp; <sub>${p.date}</sub>`).join("\n");
 }

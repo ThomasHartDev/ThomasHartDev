@@ -1,12 +1,17 @@
 // Regenerates README.md from README.template.md: injects the latest blog posts
-// from thomas-hart.com (public sitemap), a curated flagship-repos list, and the
-// most recently pushed repos. Run by the update-profile workflow on a daily cron.
+// (footer only) and a merged "Recent projects" list (curated + freshly pushed).
+// Run by the update-profile workflow on a daily cron.
 // No secrets: everything it reads is public. Selection/render logic lives in
 // feed-lib.mjs so it can be unit tested without network.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { flagshipNames, renderFlagship, renderRecent, selectRecent } from "./feed-lib.mjs";
+import {
+  flagshipNames,
+  renderLatestPosts,
+  renderRecentProjects,
+  selectRecent,
+} from "./feed-lib.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
@@ -39,35 +44,9 @@ async function recentlyShipped() {
     const repos = await fetchJson(
       "https://api.github.com/users/ThomasHartDev/repos?sort=pushed&per_page=40&type=owner"
     );
-    return selectRecent(repos, { exclude: flagshipNames(), count: 2 });
+    return selectRecent(repos, { exclude: flagshipNames(), count: 3 });
   } catch {
     return [];
-  }
-}
-
-const STILLAWEBSITE_URL = "https://stillawebsite.com";
-
-// The stillawebsite.com blurb tracks the live site's own og:description so this
-// section can't drift again. It used to hardcode a "dead 2009 template" opening
-// that stopped being true the day the front door was redesigned into the modern
-// dark gate. Fail-soft: any fetch/parse miss returns null and the template's
-// static fallback (already accurate) stays in place.
-async function stillawebsiteBlurb() {
-  try {
-    const html = await fetchText(STILLAWEBSITE_URL);
-    const m =
-      html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i) ||
-      html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i);
-    const pitch = ((m && m[1]) || "").trim();
-    if (!pitch) return null;
-    return (
-      `**[stillawebsite.com](${STILLAWEBSITE_URL})** opens as a quiet dark page, ` +
-      `then slowly becomes something you have probably never used in a browser. ` +
-      `${pitch} Best with sound on. Every pixel is generated from code, all of it ` +
-      `running in a single browser tab.`
-    );
-  } catch {
-    return null;
   }
 }
 
@@ -75,7 +54,11 @@ async function stillawebsiteBlurb() {
 function titleFromSlug(slug) {
   return slug
     .split("-")
-    .map((w) => (w.length <= 3 && /^(and|the|for|to|of|in|on|a|vs|my)$/i.test(w) ? w : w[0].toUpperCase() + w.slice(1)))
+    .map((w) =>
+      w.length <= 3 && /^(and|the|for|to|of|in|on|a|vs|my)$/i.test(w)
+        ? w
+        : w[0].toUpperCase() + w.slice(1)
+    )
     .join(" ");
 }
 
@@ -87,47 +70,60 @@ async function ogTitle(url) {
       html.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i) ||
       html.match(/<title[^>]*>([^<]+)<\/title>/i);
     if (m) return m[1].replace(/\s*[|•·—-]\s*Thomas Hart.*$/i, "").trim();
-  } catch {}
+  } catch {
+    /* soft-fail title fetch */
+  }
   return null;
 }
 
 async function main() {
-  const xml = await fetchText(SITEMAP);
-  const entries = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)]
-    .map((m) => {
-      const loc = (m[1].match(/<loc>([^<]+)<\/loc>/) || [])[1] || "";
-      const lm = (m[1].match(/<lastmod>([^<]+)<\/lastmod>/) || [])[1] || "";
-      return { loc, lm };
-    })
-    .filter((e) => /\/blog\/[^/]+$/.test(e.loc))
-    .sort((a, b) => new Date(b.lm).getTime() - new Date(a.lm).getTime())
-    .slice(0, COUNT);
+  let postBlock = "";
+  try {
+    const xml = await fetchText(SITEMAP);
+    const entries = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)]
+      .map((m) => {
+        const loc = (m[1].match(/<loc>([^<]+)<\/loc>/) || [])[1] || "";
+        const lm = (m[1].match(/<lastmod>([^<]+)<\/lastmod>/) || [])[1] || "";
+        return { loc, lm };
+      })
+      .filter((e) => /\/blog\/[^/]+$/.test(e.loc))
+      .sort((a, b) => new Date(b.lm).getTime() - new Date(a.lm).getTime())
+      .slice(0, COUNT);
 
-  const items = [];
-  for (const e of entries) {
-    const slug = e.loc.split("/blog/")[1];
-    const title = (await ogTitle(e.loc)) || titleFromSlug(slug);
-    const date = new Date(e.lm).toLocaleDateString("en-US", { month: "short", year: "numeric" });
-    items.push(`- [${title}](${e.loc}) &nbsp;·&nbsp; <sub>${date}</sub>`);
+    /** @type {{ title: string, url: string, date: string }[]} */
+    const posts = [];
+    for (const e of entries) {
+      const slug = e.loc.split("/blog/")[1];
+      const title = (await ogTitle(e.loc)) || titleFromSlug(slug);
+      const date = new Date(e.lm).toLocaleDateString("en-US", {
+        month: "short",
+        year: "numeric",
+      });
+      posts.push({ title, url: e.loc, date });
+    }
+    postBlock = renderLatestPosts(posts);
+  } catch {
+    postBlock = "";
   }
 
-  const postBlock = items.join("\n");
-  const shipBlock = renderRecent(await recentlyShipped());
-  const swBlurb = await stillawebsiteBlurb();
+  const recent = await recentlyShipped();
+  const projectsBlock = renderRecentProjects({ recent });
 
   const template = fs.readFileSync(path.join(root, "README.template.md"), "utf8");
-  let out = template
-    .replace(/(<!-- LATEST_POSTS -->)[\s\S]*?(<!-- \/LATEST_POSTS -->)/, `$1\n${postBlock}\n$2`)
-    .replace(/(<!-- FLAGSHIP -->)[\s\S]*?(<!-- \/FLAGSHIP -->)/, `$1\n${renderFlagship()}\n$2`)
-    .replace(/(<!-- RECENT_SHIP -->)[\s\S]*?(<!-- \/RECENT_SHIP -->)/, `$1\n${shipBlock}\n$2`);
-  if (swBlurb) {
-    out = out.replace(
-      /(<!-- STILLAWEBSITE -->)[\s\S]*?(<!-- \/STILLAWEBSITE -->)/,
-      `$1\n> ${swBlurb}\n> $2`
+  const out = template
+    .replace(
+      /(<!-- LATEST_POSTS -->)[\s\S]*?(<!-- \/LATEST_POSTS -->)/,
+      postBlock ? `$1\n${postBlock}\n$2` : `$1\n$2`
+    )
+    .replace(
+      /(<!-- RECENT_PROJECTS -->)[\s\S]*?(<!-- \/RECENT_PROJECTS -->)/,
+      `$1\n${projectsBlock}\n$2`
     );
-  }
+
   fs.writeFileSync(path.join(root, "README.md"), out);
-  console.log(`injected ${items.length} posts, flagship, recently shipped, stillawebsite ${swBlurb ? "ok" : "fallback"}`);
+  console.log(
+    `injected recent projects (${recent.length} auto), footer posts ${postBlock ? "ok" : "empty"}`
+  );
 }
 
 main().catch((e) => {

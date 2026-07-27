@@ -8,6 +8,7 @@
     "build:feed": "node scripts/update-feed.mjs",
     "plan:pins": "node scripts/pin-repos.mjs",
     "build:banner": "node scripts/build-banner.mjs",
+    "build:work-cards": "node scripts/build-work-cards.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
