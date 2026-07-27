@@ -28,7 +28,7 @@ export const FLAGSHIP = [
     name: "event-broker-lab",
     url: "https://github.com/ThomasHartDev/event-broker-lab",
     blurb:
-      "In-memory message broker built from scratch: pub/sub, work queues, delivery guarantees, backpressure. The ideas behind Kafka and SQS, small enough to read.",
+      "A message broker I built from scratch in memory, with publish/subscribe, work queues, delivery guarantees, and backpressure. It's the core of what Kafka and SQS do, shrunk down to something you can read in one sitting.",
   },
   {
     name: "airlock",
@@ -50,6 +50,39 @@ export const FLAGSHIP = [
 ];
 
 const SELF = "ThomasHartDev";
+
+// Old university coursework. It's fine to have public, but a chore commit on one
+// of these shouldn't push it into "Recently shipped" ahead of real recent work,
+// so the auto feed and pin scorer skip them.
+/** @type {string[]} */
+export const COURSEWORK = [
+  "AES-Java",
+  "Computational-Theory",
+  "Computer-Security-Project-Reports",
+  "Creative-Web-Project",
+  "Design-Principle-Exercises-And-Notes",
+  "Diffie-Hellman-Project",
+  "EvilHangman",
+  "HashAttack",
+  "MAC-Attack",
+  "RSA-Project",
+  "SpellingCorrector",
+  "Testing-Verification-and-Analysis",
+  "algorithm-design-and-analysis",
+  "discrete-structures",
+  "family-map-application",
+  "operating-system-design",
+  "systems-programming",
+  "tweeter",
+  "y86-Lab",
+];
+
+/**
+ * @returns {Set<string>}
+ */
+export function courseworkNames() {
+  return new Set(COURSEWORK);
+}
 
 /**
  * Names already surfaced as curated projects, so the auto feed can skip them.

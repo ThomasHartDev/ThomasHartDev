@@ -7,6 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  courseworkNames,
   flagshipNames,
   renderLatestPosts,
   renderRecentProjects,
@@ -44,7 +45,8 @@ async function recentlyShipped() {
     const repos = await fetchJson(
       "https://api.github.com/users/ThomasHartDev/repos?sort=pushed&per_page=40&type=owner"
     );
-    return selectRecent(repos, { exclude: flagshipNames(), count: 3 });
+    const exclude = new Set([...flagshipNames(), ...courseworkNames()]);
+    return selectRecent(repos, { exclude, count: 3 });
   } catch {
     return [];
   }

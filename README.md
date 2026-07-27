@@ -33,7 +33,7 @@ Live sites. Each card is a link.
 ### Recent projects
 
 <!-- RECENT_PROJECTS -->
-- [event-broker-lab](https://github.com/ThomasHartDev/event-broker-lab) — In-memory message broker built from scratch: pub/sub, work queues, delivery guarantees, backpressure. The ideas behind Kafka and SQS, small enough to read.
+- [event-broker-lab](https://github.com/ThomasHartDev/event-broker-lab) — A message broker I built from scratch in memory, with publish/subscribe, work queues, delivery guarantees, and backpressure. It's the core of what Kafka and SQS do, shrunk down to something you can read in one sitting.
 - [airlock](https://github.com/ThomasHartDev/airlock) — Ephemeral, zero-credential sandbox for running untrusted or agent-generated code, with self-verifying execution.
 - [image-processing](https://github.com/ThomasHartDev/image-processing) — Sharp-based optimizer that binary-searches encoder quality against an SSIM target, with perceptual scoring.
 - [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Turns an iPhone into a low-latency OBS camera over the LAN. No app, no fee.
