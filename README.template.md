@@ -85,6 +85,13 @@
 ![Sharp](https://img.shields.io/badge/Sharp-0E1C2E?style=flat-square&logoColor=99CC00)
 ![pnpm](https://img.shields.io/badge/pnpm-0E1C2E?style=flat-square&logo=pnpm&logoColor=F69220)
 
+**AI**
+
+![Claude](https://img.shields.io/badge/Claude-0E1C2E?style=flat-square&logo=anthropic&logoColor=F3EDE3)
+![Grok](https://img.shields.io/badge/Grok-0E1C2E?style=flat-square&logo=x&logoColor=F3EDE3)
+![Codex](https://img.shields.io/badge/Codex-0E1C2E?style=flat-square&logo=openai&logoColor=F3EDE3)
+![Gemini](https://img.shields.io/badge/Gemini-0E1C2E?style=flat-square&logo=googlegemini&logoColor=8E75B2)
+
 ### Reach me
 
 [thomashartdev@gmail.com](mailto:thomashartdev@gmail.com)

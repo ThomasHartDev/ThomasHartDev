@@ -28,24 +28,23 @@ export const FLAGSHIP = [
     name: "event-broker-lab",
     url: "https://github.com/ThomasHartDev/event-broker-lab",
     blurb:
-      "A message broker I built from scratch in memory, with publish/subscribe, work queues, delivery guarantees, and backpressure. It's the core of what Kafka and SQS do, shrunk down to something you can read in one sitting.",
+      "In-memory message broker from scratch: pub/sub, work queues, delivery guarantees, and backpressure.",
   },
   {
     name: "airlock",
     url: "https://github.com/ThomasHartDev/airlock",
     blurb:
-      "Ephemeral, zero-credential sandbox for running untrusted or agent-generated code, with self-verifying execution.",
+      "Ephemeral zero-credential sandbox for untrusted or agent-generated code, with self-verifying execution.",
   },
   {
     name: "image-processing",
     url: "https://github.com/ThomasHartDev/image-processing",
-    blurb:
-      "Sharp-based optimizer that binary-searches encoder quality against an SSIM target, with perceptual scoring.",
+    blurb: "Sharp optimizer that binary-searches encoder quality against an SSIM target.",
   },
   {
     name: "obs-phone-cam",
     url: "https://github.com/ThomasHartDev/obs-phone-cam",
-    blurb: "Turns an iPhone into a low-latency OBS camera over the LAN. No app, no fee.",
+    blurb: "Turns an iPhone into a low-latency OBS camera over the LAN.",
   },
 ];
 
@@ -140,40 +139,52 @@ export function relDate(iso, now = Date.now()) {
 }
 
 /**
+ * Keep project blurbs short enough to scan on the profile card.
+ * @param {string} text
+ * @param {number} [max]
+ * @returns {string}
+ */
+export function shortenBlurb(text, max = 110) {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max - 1);
+  const sp = cut.lastIndexOf(" ");
+  return `${(sp > 40 ? cut.slice(0, sp) : cut).replace(/[,;:.\s]+$/, "")}…`;
+}
+
+/**
  * @param {Flagship[]} [list]
  * @returns {string}
  */
 export function renderFlagship(list = FLAGSHIP) {
-  return list.map((f) => `- [${f.name}](${f.url}) — ${f.blurb}`).join("\n");
+  return list.map((f) => `- **[${f.name}](${f.url})** — ${shortenBlurb(f.blurb)}`).join("\n\n");
 }
 
 /**
  * @param {Repo[]} repos
- * @param {number} [now]
  * @returns {string}
  */
-export function renderRecent(repos, now = Date.now()) {
+export function renderRecent(repos) {
   if (!repos.length) return "";
   return repos
     .map((r) => {
-      const blurb = r.description || r.language || "recently pushed";
-      return `- [${r.name}](${r.html_url}) — ${blurb} &nbsp;·&nbsp; <sub>${relDate(r.pushed_at, now)}</sub>`;
+      const blurb = shortenBlurb(r.description || r.language || "recently pushed");
+      return `- **[${r.name}](${r.html_url})** — ${blurb}`;
     })
-    .join("\n");
+    .join("\n\n");
 }
 
 /**
  * Single "Recent projects" block: curated flagship first, then freshly shipped.
- * @param {{ flagship?: Flagship[], recent?: Repo[], now?: number }} [opts]
+ * @param {{ flagship?: Flagship[], recent?: Repo[] }} [opts]
  * @returns {string}
  */
 export function renderRecentProjects(opts = {}) {
   const flagship = opts.flagship ?? FLAGSHIP;
   const recent = opts.recent ?? [];
-  const now = opts.now ?? Date.now();
   const head = renderFlagship(flagship);
-  const tail = renderRecent(recent, now);
-  if (head && tail) return `${head}\n${tail}`;
+  const tail = renderRecent(recent);
+  if (head && tail) return `${head}\n\n${tail}`;
   if (head) return head;
   if (tail) return tail;
   return "- More on [thomas-hart.com](https://thomas-hart.com)";

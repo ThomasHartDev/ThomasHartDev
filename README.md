@@ -25,13 +25,19 @@
 ### Recent projects
 
 <!-- RECENT_PROJECTS -->
-- [event-broker-lab](https://github.com/ThomasHartDev/event-broker-lab) — A message broker I built from scratch in memory, with publish/subscribe, work queues, delivery guarantees, and backpressure. It's the core of what Kafka and SQS do, shrunk down to something you can read in one sitting.
-- [airlock](https://github.com/ThomasHartDev/airlock) — Ephemeral, zero-credential sandbox for running untrusted or agent-generated code, with self-verifying execution.
-- [image-processing](https://github.com/ThomasHartDev/image-processing) — Sharp-based optimizer that binary-searches encoder quality against an SSIM target, with perceptual scoring.
-- [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Turns an iPhone into a low-latency OBS camera over the LAN. No app, no fee.
-- [turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit) — Turbo + pnpm monorepo for LLM agents: agent loop, pluggable providers, rate limiting, Redis state, SSE HTTP server, latency telemetry, structured logging &nbsp;·&nbsp; <sub>today</sub>
-- [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — Render the exact board position at any percentage of a real chess.com game, as a recurring cameo for a system-design video series &nbsp;·&nbsp; <sub>yesterday</sub>
-- [modern-frontend-lab](https://github.com/ThomasHartDev/modern-frontend-lab) — Living reference of modern front-end technique in Next.js 15 + React 19: Server Components, streaming, Suspense, optimistic UI, state management, list virtualization, design tokens, and Core Web Vitals. &nbsp;·&nbsp; <sub>2 days ago</sub>
+- **[event-broker-lab](https://github.com/ThomasHartDev/event-broker-lab)** — In-memory message broker from scratch: pub/sub, work queues, delivery guarantees, and backpressure.
+
+- **[airlock](https://github.com/ThomasHartDev/airlock)** — Ephemeral zero-credential sandbox for untrusted or agent-generated code, with self-verifying execution.
+
+- **[image-processing](https://github.com/ThomasHartDev/image-processing)** — Sharp optimizer that binary-searches encoder quality against an SSIM target.
+
+- **[obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam)** — Turns an iPhone into a low-latency OBS camera over the LAN.
+
+- **[turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit)** — Turbo + pnpm monorepo for LLM agents: agent loop, pluggable providers, rate limiting, Redis state, SSE HTTP…
+
+- **[chess-cameo](https://github.com/ThomasHartDev/chess-cameo)** — Render the exact board position at any percentage of a real chess.com game, as a recurring cameo for a…
+
+- **[modern-frontend-lab](https://github.com/ThomasHartDev/modern-frontend-lab)** — Living reference of modern front-end technique in Next.js 15 + React 19: Server Components, streaming…
 <!-- /RECENT_PROJECTS -->
 
 ### Stack
@@ -91,6 +97,13 @@
 ![Resend](https://img.shields.io/badge/Resend-0E1C2E?style=flat-square&logo=resend&logoColor=F3EDE3)
 ![Sharp](https://img.shields.io/badge/Sharp-0E1C2E?style=flat-square&logoColor=99CC00)
 ![pnpm](https://img.shields.io/badge/pnpm-0E1C2E?style=flat-square&logo=pnpm&logoColor=F69220)
+
+**AI**
+
+![Claude](https://img.shields.io/badge/Claude-0E1C2E?style=flat-square&logo=anthropic&logoColor=F3EDE3)
+![Grok](https://img.shields.io/badge/Grok-0E1C2E?style=flat-square&logo=x&logoColor=F3EDE3)
+![Codex](https://img.shields.io/badge/Codex-0E1C2E?style=flat-square&logo=openai&logoColor=F3EDE3)
+![Gemini](https://img.shields.io/badge/Gemini-0E1C2E?style=flat-square&logo=googlegemini&logoColor=8E75B2)
 
 ### Reach me
 
