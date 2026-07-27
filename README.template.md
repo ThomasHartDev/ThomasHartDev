@@ -16,21 +16,10 @@
 
 ### Selected work
 
-Live sites. Each card is a link.
-
 <p align="center">
-  <a href="https://forbidden-street.com" title="Forbidden Street">
-    <img src="./assets/work-forbidden-street.svg" alt="Forbidden Street — forbidden-street.com" width="32%" /><br />
-    <sub>Forbidden Street</sub>
-  </a>&nbsp;&nbsp;
-  <a href="https://photo-atlas.com" title="Photo Atlas">
-    <img src="./assets/work-photo-atlas.svg" alt="Photo Atlas — photo-atlas.com" width="32%" /><br />
-    <sub>Photo Atlas</sub>
-  </a>&nbsp;&nbsp;
-  <a href="https://subsecondstudio.com" title="Subsecond Studio">
-    <img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio — subsecondstudio.com" width="32%" /><br />
-    <sub>Subsecond Studio</sub>
-  </a>
+  <a href="https://forbidden-street.com"><img src="./assets/work-forbidden-street.svg" alt="Forbidden Street" width="32%" /></a>
+  <a href="https://photo-atlas.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="32%" /></a>
+  <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="32%" /></a>
 </p>
 
 ### Recent projects

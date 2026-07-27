@@ -16,21 +16,10 @@
 
 ### Selected work
 
-Live sites. Each card is a link.
-
 <p align="center">
-  <a href="https://forbidden-street.com" title="Forbidden Street">
-    <img src="./assets/work-forbidden-street.svg" alt="Forbidden Street — forbidden-street.com" width="32%" /><br />
-    <sub>Forbidden Street</sub>
-  </a>&nbsp;&nbsp;
-  <a href="https://photo-atlas.com" title="Photo Atlas">
-    <img src="./assets/work-photo-atlas.svg" alt="Photo Atlas — photo-atlas.com" width="32%" /><br />
-    <sub>Photo Atlas</sub>
-  </a>&nbsp;&nbsp;
-  <a href="https://subsecondstudio.com" title="Subsecond Studio">
-    <img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio — subsecondstudio.com" width="32%" /><br />
-    <sub>Subsecond Studio</sub>
-  </a>
+  <a href="https://forbidden-street.com"><img src="./assets/work-forbidden-street.svg" alt="Forbidden Street" width="32%" /></a>
+  <a href="https://photo-atlas.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="32%" /></a>
+  <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="32%" /></a>
 </p>
 
 ### Recent projects
@@ -42,7 +31,7 @@ Live sites. Each card is a link.
 - [obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam) — Turns an iPhone into a low-latency OBS camera over the LAN. No app, no fee.
 - [turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit) — Turbo + pnpm monorepo for LLM agents: agent loop, pluggable providers, rate limiting, Redis state, SSE HTTP server, latency telemetry, structured logging &nbsp;·&nbsp; <sub>today</sub>
 - [chess-cameo](https://github.com/ThomasHartDev/chess-cameo) — Render the exact board position at any percentage of a real chess.com game, as a recurring cameo for a system-design video series &nbsp;·&nbsp; <sub>yesterday</sub>
-- [modern-frontend-lab](https://github.com/ThomasHartDev/modern-frontend-lab) — Living reference of modern front-end technique in Next.js 15 + React 19: Server Components, streaming, Suspense, optimistic UI, state management, list virtualization, design tokens, and Core Web Vitals. &nbsp;·&nbsp; <sub>yesterday</sub>
+- [modern-frontend-lab](https://github.com/ThomasHartDev/modern-frontend-lab) — Living reference of modern front-end technique in Next.js 15 + React 19: Server Components, streaming, Suspense, optimistic UI, state management, list virtualization, design tokens, and Core Web Vitals. &nbsp;·&nbsp; <sub>2 days ago</sub>
 <!-- /RECENT_PROJECTS -->
 
 ### Stack
