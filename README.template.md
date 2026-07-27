@@ -19,14 +19,17 @@
 Live sites. Each card is a link.
 
 <p align="center">
-  <a href="https://forbidden-street.com" title="Forbidden Street — open live site">
-    <img src="./assets/work-forbidden-street.svg" alt="Forbidden Street — visit forbidden-street.com" width="32%" />
-  </a>&nbsp;
-  <a href="https://photo-atlas.com" title="Photo Atlas — open live site">
-    <img src="./assets/work-photo-atlas.svg" alt="Photo Atlas — visit photo-atlas.com" width="32%" />
-  </a>&nbsp;
-  <a href="https://subsecondstudio.com" title="Subsecond Studio — open live site">
-    <img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio — visit subsecondstudio.com" width="32%" />
+  <a href="https://forbidden-street.com" title="Forbidden Street">
+    <img src="./assets/work-forbidden-street.svg" alt="Forbidden Street — forbidden-street.com" width="32%" /><br />
+    <sub>Forbidden Street</sub>
+  </a>&nbsp;&nbsp;
+  <a href="https://photo-atlas.com" title="Photo Atlas">
+    <img src="./assets/work-photo-atlas.svg" alt="Photo Atlas — photo-atlas.com" width="32%" /><br />
+    <sub>Photo Atlas</sub>
+  </a>&nbsp;&nbsp;
+  <a href="https://subsecondstudio.com" title="Subsecond Studio">
+    <img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio — subsecondstudio.com" width="32%" /><br />
+    <sub>Subsecond Studio</sub>
   </a>
 </p>
 
@@ -37,11 +40,15 @@ Live sites. Each card is a link.
 
 ### Stack
 
+**Languages**
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-0E1C2E?style=flat-square&logo=typescript&logoColor=3178C6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0E1C2E?style=flat-square&logo=javascript&logoColor=F7DF1E)
 ![Python](https://img.shields.io/badge/Python-0E1C2E?style=flat-square&logo=python&logoColor=3776AB)
 ![C++](https://img.shields.io/badge/C%2B%2B-0E1C2E?style=flat-square&logo=cplusplus&logoColor=00599C)
 ![SQL](https://img.shields.io/badge/SQL-0E1C2E?style=flat-square&logo=postgresql&logoColor=F3EDE3)
+
+**Frontend**
 
 ![Next.js](https://img.shields.io/badge/Next.js-0E1C2E?style=flat-square&logo=nextdotjs&logoColor=F3EDE3)
 ![React](https://img.shields.io/badge/React-0E1C2E?style=flat-square&logo=react&logoColor=61DAFB)
@@ -52,11 +59,15 @@ Live sites. Each card is a link.
 ![Framer%20Motion](https://img.shields.io/badge/Framer%20Motion-0E1C2E?style=flat-square&logo=framer&logoColor=F3EDE3)
 ![Three.js](https://img.shields.io/badge/Three.js-0E1C2E?style=flat-square&logo=threedotjs&logoColor=F3EDE3)
 
+**Backend**
+
 ![Node.js](https://img.shields.io/badge/Node.js-0E1C2E?style=flat-square&logo=nodedotjs&logoColor=5FA04E)
 ![GraphQL](https://img.shields.io/badge/GraphQL-0E1C2E?style=flat-square&logo=graphql&logoColor=E10098)
 ![tRPC](https://img.shields.io/badge/tRPC-0E1C2E?style=flat-square&logo=trpc&logoColor=398CCB)
 ![Temporal](https://img.shields.io/badge/Temporal-0E1C2E?style=flat-square&logo=temporal&logoColor=F3EDE3)
 ![WebSockets](https://img.shields.io/badge/WebSockets-0E1C2E?style=flat-square&logoColor=F3EDE3)
+
+**Data**
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0E1C2E?style=flat-square&logo=postgresql&logoColor=F3EDE3)
 ![MongoDB](https://img.shields.io/badge/MongoDB-0E1C2E?style=flat-square&logo=mongodb&logoColor=47A248)
@@ -65,6 +76,8 @@ Live sites. Each card is a link.
 ![Prisma](https://img.shields.io/badge/Prisma-0E1C2E?style=flat-square&logo=prisma&logoColor=F3EDE3)
 ![Drizzle](https://img.shields.io/badge/Drizzle-0E1C2E?style=flat-square&logoColor=C5F74F)
 
+**Infrastructure**
+
 ![Vercel](https://img.shields.io/badge/Vercel-0E1C2E?style=flat-square&logo=vercel&logoColor=F3EDE3)
 ![AWS](https://img.shields.io/badge/AWS-0E1C2E?style=flat-square&logo=amazonaws&logoColor=FF9900)
 ![GCP](https://img.shields.io/badge/GCP-0E1C2E?style=flat-square&logo=googlecloud&logoColor=4285F4)
@@ -72,6 +85,8 @@ Live sites. Each card is a link.
 ![Docker](https://img.shields.io/badge/Docker-0E1C2E?style=flat-square&logo=docker&logoColor=2496ED)
 ![GitHub%20Actions](https://img.shields.io/badge/GitHub%20Actions-0E1C2E?style=flat-square&logo=githubactions&logoColor=2088FF)
 ![Electron](https://img.shields.io/badge/Electron-0E1C2E?style=flat-square&logo=electron&logoColor=47848F)
+
+**Tools**
 
 ![Playwright](https://img.shields.io/badge/Playwright-0E1C2E?style=flat-square&logo=playwright&logoColor=B23A48)
 ![Vitest](https://img.shields.io/badge/Vitest-0E1C2E?style=flat-square&logo=vitest&logoColor=6E9F18)
@@ -95,9 +110,5 @@ Live sites. Each card is a link.
 
 <!-- LATEST_POSTS -->
 <!-- /LATEST_POSTS -->
-
-<br />
-
-<img src="./assets/pulse.svg" alt="Subsecond Studio — built to load in under a second" width="100%" />
 
 </div>

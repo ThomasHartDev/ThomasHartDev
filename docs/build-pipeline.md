@@ -13,14 +13,14 @@ The selection and rendering rules live in `scripts/feed-lib.mjs` as pure functio
 
 Curated flagship entries are the `FLAGSHIP` array in `scripts/feed-lib.mjs`. Add or reorder there.
 
-Selected work cards are static assets under `assets/work-*.svg` (SMIL pulse on the CTA and border). Rebuild from portfolio heroes with:
+Selected work cards are clean screenshot tiles under `assets/work-*.svg` (rounded corners + soft border pulse, no browser chrome or footer bars). Rebuild from portfolio heroes with:
 
 ```bash
 # after downloading hero sources to /tmp/profile-cards/
 node scripts/build-work-cards.mjs
 ```
 
-True CSS hover on GitHub README images is not supported; the SVG pulse is the interactive stand-in.
+True CSS hover on GitHub README images is not supported; the border pulse is the interactive stand-in.
 
 ## Pin planner
 
