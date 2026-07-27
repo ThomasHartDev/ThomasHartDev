@@ -6,68 +6,98 @@
 
 <br />
 
-I'm a software engineer in Utah. I build full-stack web apps and usually own the whole thing, from the database schema up through the API and the UI to the deploy. Most of it is Next.js, TypeScript, and Postgres. I also run [Subsecond Studio](https://subsecondstudio.com), where I build small, fast web products for clients.
-
-### Want to see something cool?
-
-> [!TIP]
-> <!-- STILLAWEBSITE -->
-> **[stillawebsite.com](https://stillawebsite.com)** opens as a quiet dark page and slowly turns into something you've probably never seen a browser do. Give it about fifteen minutes with the sound on, then look at the URL bar. All of it is generated from code in a single tab.
-> <!-- /STILLAWEBSITE -->
+### Frontend Showstopper
 
 <div align="center">
-  <br />
 
-[![Enter the experience → stillawebsite.com](https://img.shields.io/badge/%E2%96%B6%20Enter%20the%20experience-stillawebsite.com-B23A48?style=for-the-badge&labelColor=0E1C2E)](https://stillawebsite.com)
+[![stillawebsite.com](https://img.shields.io/badge/%E2%96%B6%20stillawebsite.com-Frontend%20Showstopper-B23A48?style=for-the-badge&labelColor=0E1C2E)](https://stillawebsite.com)
 
-<sub>Lighthouse 94 &nbsp;·&nbsp; accessibility 100 &nbsp;·&nbsp; zero layout shift &nbsp;·&nbsp; no stock, no video, all code</sub>
-
-  <br />
 </div>
 
-### Currently
+### Selected work
 
-Building [Subsecond Studio](https://subsecondstudio.com). On the side I write about the parts of solo product work that don't usually get written down, like migrations, what testing is actually worth, and where the hours go.
+Live sites. Each card is a link.
 
-### Latest writing
+<p align="center">
+  <a href="https://forbidden-street.com" title="Forbidden Street — open live site">
+    <img src="./assets/work-forbidden-street.svg" alt="Forbidden Street — visit forbidden-street.com" width="32%" />
+  </a>&nbsp;
+  <a href="https://photo-atlas.com" title="Photo Atlas — open live site">
+    <img src="./assets/work-photo-atlas.svg" alt="Photo Atlas — visit photo-atlas.com" width="32%" />
+  </a>&nbsp;
+  <a href="https://subsecondstudio.com" title="Subsecond Studio — open live site">
+    <img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio — visit subsecondstudio.com" width="32%" />
+  </a>
+</p>
+
+### Recent projects
+
+<!-- RECENT_PROJECTS -->
+<!-- /RECENT_PROJECTS -->
+
+### Stack
+
+![TypeScript](https://img.shields.io/badge/TypeScript-0E1C2E?style=flat-square&logo=typescript&logoColor=3178C6)
+![JavaScript](https://img.shields.io/badge/JavaScript-0E1C2E?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![Python](https://img.shields.io/badge/Python-0E1C2E?style=flat-square&logo=python&logoColor=3776AB)
+![C++](https://img.shields.io/badge/C%2B%2B-0E1C2E?style=flat-square&logo=cplusplus&logoColor=00599C)
+![SQL](https://img.shields.io/badge/SQL-0E1C2E?style=flat-square&logo=postgresql&logoColor=F3EDE3)
+
+![Next.js](https://img.shields.io/badge/Next.js-0E1C2E?style=flat-square&logo=nextdotjs&logoColor=F3EDE3)
+![React](https://img.shields.io/badge/React-0E1C2E?style=flat-square&logo=react&logoColor=61DAFB)
+![Vue](https://img.shields.io/badge/Vue-0E1C2E?style=flat-square&logo=vuedotjs&logoColor=4FC08D)
+![Nuxt](https://img.shields.io/badge/Nuxt-0E1C2E?style=flat-square&logo=nuxt&logoColor=00DC82)
+![Shopify%20Hydrogen](https://img.shields.io/badge/Shopify%20Hydrogen-0E1C2E?style=flat-square&logo=shopify&logoColor=95BF47)
+![Tailwind](https://img.shields.io/badge/Tailwind-0E1C2E?style=flat-square&logo=tailwindcss&logoColor=38BDF8)
+![Framer%20Motion](https://img.shields.io/badge/Framer%20Motion-0E1C2E?style=flat-square&logo=framer&logoColor=F3EDE3)
+![Three.js](https://img.shields.io/badge/Three.js-0E1C2E?style=flat-square&logo=threedotjs&logoColor=F3EDE3)
+
+![Node.js](https://img.shields.io/badge/Node.js-0E1C2E?style=flat-square&logo=nodedotjs&logoColor=5FA04E)
+![GraphQL](https://img.shields.io/badge/GraphQL-0E1C2E?style=flat-square&logo=graphql&logoColor=E10098)
+![tRPC](https://img.shields.io/badge/tRPC-0E1C2E?style=flat-square&logo=trpc&logoColor=398CCB)
+![Temporal](https://img.shields.io/badge/Temporal-0E1C2E?style=flat-square&logo=temporal&logoColor=F3EDE3)
+![WebSockets](https://img.shields.io/badge/WebSockets-0E1C2E?style=flat-square&logoColor=F3EDE3)
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0E1C2E?style=flat-square&logo=postgresql&logoColor=F3EDE3)
+![MongoDB](https://img.shields.io/badge/MongoDB-0E1C2E?style=flat-square&logo=mongodb&logoColor=47A248)
+![Redis](https://img.shields.io/badge/Redis-0E1C2E?style=flat-square&logo=redis&logoColor=DC382D)
+![Neon](https://img.shields.io/badge/Neon-0E1C2E?style=flat-square&logo=neon&logoColor=00E599)
+![Prisma](https://img.shields.io/badge/Prisma-0E1C2E?style=flat-square&logo=prisma&logoColor=F3EDE3)
+![Drizzle](https://img.shields.io/badge/Drizzle-0E1C2E?style=flat-square&logoColor=C5F74F)
+
+![Vercel](https://img.shields.io/badge/Vercel-0E1C2E?style=flat-square&logo=vercel&logoColor=F3EDE3)
+![AWS](https://img.shields.io/badge/AWS-0E1C2E?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![GCP](https://img.shields.io/badge/GCP-0E1C2E?style=flat-square&logo=googlecloud&logoColor=4285F4)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-0E1C2E?style=flat-square&logo=cloudflare&logoColor=F38020)
+![Docker](https://img.shields.io/badge/Docker-0E1C2E?style=flat-square&logo=docker&logoColor=2496ED)
+![GitHub%20Actions](https://img.shields.io/badge/GitHub%20Actions-0E1C2E?style=flat-square&logo=githubactions&logoColor=2088FF)
+![Electron](https://img.shields.io/badge/Electron-0E1C2E?style=flat-square&logo=electron&logoColor=47848F)
+
+![Playwright](https://img.shields.io/badge/Playwright-0E1C2E?style=flat-square&logo=playwright&logoColor=B23A48)
+![Vitest](https://img.shields.io/badge/Vitest-0E1C2E?style=flat-square&logo=vitest&logoColor=6E9F18)
+![Zod](https://img.shields.io/badge/Zod-0E1C2E?style=flat-square&logo=zod&logoColor=3E67B1)
+![Stripe](https://img.shields.io/badge/Stripe-0E1C2E?style=flat-square&logo=stripe&logoColor=635BFF)
+![Resend](https://img.shields.io/badge/Resend-0E1C2E?style=flat-square&logo=resend&logoColor=F3EDE3)
+![Sharp](https://img.shields.io/badge/Sharp-0E1C2E?style=flat-square&logoColor=99CC00)
+![pnpm](https://img.shields.io/badge/pnpm-0E1C2E?style=flat-square&logo=pnpm&logoColor=F69220)
+
+### Reach me
+
+[thomashartdev@gmail.com](mailto:thomashartdev@gmail.com)
+
+---
+
+<div align="center">
+
+**Links**
+
+[Blog](https://thomas-hart.com/blog) &nbsp;·&nbsp; [Portfolio](https://thomas-hart.com) &nbsp;·&nbsp; [Subsecond Studio](https://subsecondstudio.com) &nbsp;·&nbsp; [Repos](https://github.com/ThomasHartDev?tab=repositories)
 
 <!-- LATEST_POSTS -->
 <!-- /LATEST_POSTS -->
 
-More at [thomas-hart.com/blog](https://thomas-hart.com/blog).
+<br />
 
-### Flagship repos
+<img src="./assets/pulse.svg" alt="Subsecond Studio — built to load in under a second" width="100%" />
 
-Small, self-contained projects where the point is the engineering. Each one takes something hard and keeps it short enough to read through in a sitting.
-
-<!-- FLAGSHIP -->
-<!-- /FLAGSHIP -->
-
-### Recently shipped
-
-<!-- RECENT_SHIP -->
-<!-- /RECENT_SHIP -->
-
-### Selected work
-
-- [Forbidden Street](https://thomas-hart.com/projects/forbidden-street) — brand and site build
-- [Photo Atlas](https://thomas-hart.com/projects/photo-atlas) — image pipeline and search
-- [Subsecond Studio](https://thomas-hart.com/projects/subsecond-studio) — the studio itself
-
-### Stack
-
-![Next.js](https://img.shields.io/badge/Next.js-0E1C2E?style=flat-square&logo=nextdotjs&logoColor=F3EDE3)
-![TypeScript](https://img.shields.io/badge/TypeScript-0E1C2E?style=flat-square&logo=typescript&logoColor=3178C6)
-![React](https://img.shields.io/badge/React-0E1C2E?style=flat-square&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-0E1C2E?style=flat-square&logo=nodedotjs&logoColor=5FA04E)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0E1C2E?style=flat-square&logo=postgresql&logoColor=F3EDE3)
-![Playwright](https://img.shields.io/badge/Playwright-0E1C2E?style=flat-square&logo=playwright&logoColor=B23A48)
-
-### Reach me
-
-[Portfolio](https://thomas-hart.com) &nbsp;·&nbsp; [Subsecond Studio](https://subsecondstudio.com) &nbsp;·&nbsp; [Email](mailto:thomashartdev@gmail.com)
-
-<div align="center">
-  <br />
-  <img src="./assets/pulse.svg" alt="Subsecond Studio — built to load in under a second" width="100%" />
 </div>

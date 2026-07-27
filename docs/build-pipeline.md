@@ -4,15 +4,23 @@
 
 ## How it works
 
-`scripts/update-feed.mjs` reads `README.template.md` and fills three placeholder blocks:
+`scripts/update-feed.mjs` reads `README.template.md` and fills two placeholder blocks:
 
-- `<!-- LATEST_POSTS -->` — the three newest posts from the `thomas-hart.com` sitemap.
-- `<!-- FLAGSHIP -->` — a curated list of the strongest repos, ordered by what each one demonstrates rather than by push date.
-- `<!-- RECENT_SHIP -->` — the most recently pushed public repos, minus forks, archived, and anything already pinned as flagship so no repo shows up twice.
+- `<!-- RECENT_PROJECTS -->` — curated flagship repos first, then the most recently pushed public repos (minus forks, archived, and anything already listed as flagship so nothing shows twice).
+- `<!-- LATEST_POSTS -->` — three newest posts from the `thomas-hart.com` sitemap, rendered in the footer under Links (not mid-page).
 
-The selection and rendering rules live in `scripts/feed-lib.mjs` as pure functions (`selectRecent`, `renderFlagship`, `renderRecent`, `relDate`) so they can be unit tested without network access. `update-feed.mjs` keeps only the I/O (fetch, file read/write).
+The selection and rendering rules live in `scripts/feed-lib.mjs` as pure functions (`selectRecent`, `renderFlagship`, `renderRecent`, `renderRecentProjects`, `renderLatestPosts`, `relDate`) so they can be unit tested without network access. `update-feed.mjs` keeps only the I/O (fetch, file read/write).
 
 Curated flagship entries are the `FLAGSHIP` array in `scripts/feed-lib.mjs`. Add or reorder there.
+
+Selected work cards are static assets under `assets/work-*.svg` (SMIL pulse on the CTA and border). Rebuild from portfolio heroes with:
+
+```bash
+# after downloading hero sources to /tmp/profile-cards/
+node scripts/build-work-cards.mjs
+```
+
+True CSS hover on GitHub README images is not supported; the SVG pulse is the interactive stand-in.
 
 ## Pin planner
 
@@ -28,8 +36,10 @@ pnpm run plan:pins    # needs gh authenticated
 
 ## What's implemented
 
-- Self-updating "Latest writing" pulled from the public sitemap.
-- Curated flagship-repos section with per-repo descriptions, deduped against the auto "recently shipped" list.
+- Footer "Latest writing" pulled from the public sitemap (under Links).
+- Merged "Recent projects" section (curated + auto recent, deduped).
+- Selected work cards linking to live sites (SVG with SMIL pulse).
+- Expanded stack badges.
 - Animated banner build (`scripts/build-banner.mjs`).
 - Pin planner that scores repos over the gh GraphQL API and prints the six strongest to pin.
 

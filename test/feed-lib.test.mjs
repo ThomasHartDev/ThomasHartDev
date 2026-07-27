@@ -6,7 +6,9 @@ import {
   flagshipNames,
   relDate,
   renderFlagship,
+  renderLatestPosts,
   renderRecent,
+  renderRecentProjects,
   selectRecent,
 } from "../scripts/feed-lib.mjs";
 
@@ -61,7 +63,10 @@ describe("selectRecent", () => {
   });
 
   it("does not mutate the caller's array", () => {
-    const repos = [repo({ name: "a", pushed_at: "2026-01-01T00:00:00Z" }), repo({ name: "b", pushed_at: "2026-06-01T00:00:00Z" })];
+    const repos = [
+      repo({ name: "a", pushed_at: "2026-01-01T00:00:00Z" }),
+      repo({ name: "b", pushed_at: "2026-06-01T00:00:00Z" }),
+    ];
     const before = repos.map((r) => r.name);
     selectRecent(repos, { count: 2 });
     expect(repos.map((r) => r.name)).toEqual(before);
@@ -85,8 +90,8 @@ describe("relDate", () => {
 });
 
 describe("renderRecent", () => {
-  it("falls back to a portfolio line when there is nothing to show", () => {
-    expect(renderRecent([])).toContain("thomas-hart.com");
+  it("returns empty string when there is nothing to show", () => {
+    expect(renderRecent([])).toBe("");
   });
   it("prefers description, then language, then a generic note", () => {
     const now = new Date("2026-01-02T00:00:00Z").getTime();
@@ -112,9 +117,45 @@ describe("renderFlagship", () => {
       expect(renderFlagship()).toContain(`[${f.name}](${f.url})`);
     }
   });
+});
 
-  it("keeps flagship and recent sections disjoint by name", () => {
+describe("renderRecentProjects", () => {
+  it("puts curated flagship first, then auto recent", () => {
+    const now = new Date("2026-01-02T00:00:00Z").getTime();
+    const out = renderRecentProjects({
+      flagship: [
+        { name: "alpha", url: "https://x/alpha", blurb: "first" },
+        { name: "beta", url: "https://x/beta", blurb: "second" },
+      ],
+      recent: [repo({ name: "fresh", description: "just shipped", pushed_at: "2026-01-02T00:00:00Z" })],
+      now,
+    });
+    const lines = out.split("\n");
+    expect(lines[0]).toContain("alpha");
+    expect(lines[1]).toContain("beta");
+    expect(lines[2]).toContain("fresh");
+    expect(lines[2]).toContain("today");
+  });
+
+  it("falls back to portfolio when both lists empty", () => {
+    expect(renderRecentProjects({ flagship: [], recent: [] })).toContain("thomas-hart.com");
+  });
+
+  it("keeps flagship and auto-recent disjoint by name when selectRecent excludes", () => {
     const repos = FLAGSHIP.map((f) => repo({ name: f.name }));
     expect(selectRecent(repos, { exclude: flagshipNames(), count: 10 })).toEqual([]);
+  });
+});
+
+describe("renderLatestPosts", () => {
+  it("returns empty for no posts", () => {
+    expect(renderLatestPosts([])).toBe("");
+  });
+  it("formats title links with dates", () => {
+    const out = renderLatestPosts([
+      { title: "Hello", url: "https://thomas-hart.com/blog/hello", date: "Jul 2026" },
+    ]);
+    expect(out).toContain("[Hello](https://thomas-hart.com/blog/hello)");
+    expect(out).toContain("Jul 2026");
   });
 });
