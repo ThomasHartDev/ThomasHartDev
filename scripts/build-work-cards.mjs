@@ -98,8 +98,8 @@ const cards = [
     title: "Forbidden Street",
     url: "https://forbidden-street.com",
     accent: "#B23A48",
-    outName: "work-forbidden-street.svg",
-    pngName: "work-forbidden-street.png",
+    outName: "work-fs.svg",
+    pngName: "work-fs.png",
   },
   {
     input: path.join(root, "assets/sources/pa-hero.webp"),

@@ -17,7 +17,7 @@
 ### Selected work
 
 <p align="center">
-  <a href="https://forbidden-street.com"><img src="./assets/work-forbidden-street.svg" alt="Forbidden Street" width="32%" /></a>
+  <a href="https://forbidden-street.com"><img src="./assets/work-fs.svg" alt="Forbidden Street" width="32%" /></a>
   <a href="https://photo-atlas.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="32%" /></a>
   <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="32%" /></a>
 </p>
