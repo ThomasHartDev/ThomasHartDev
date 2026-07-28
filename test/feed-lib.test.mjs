@@ -6,7 +6,6 @@ import {
   flagshipNames,
   relDate,
   renderFlagship,
-  renderLatestPosts,
   renderRecent,
   renderRecentProjects,
   selectRecent,
@@ -155,15 +154,3 @@ describe("renderRecentProjects", () => {
   });
 });
 
-describe("renderLatestPosts", () => {
-  it("returns empty for no posts", () => {
-    expect(renderLatestPosts([])).toBe("");
-  });
-  it("formats title links with dates", () => {
-    const out = renderLatestPosts([
-      { title: "Hello", url: "https://thomas-hart.com/blog/hello", date: "Jul 2026" },
-    ]);
-    expect(out).toContain("[Hello](https://thomas-hart.com/blog/hello)");
-    expect(out).toContain("Jul 2026");
-  });
-});

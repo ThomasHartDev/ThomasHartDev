@@ -33,11 +33,11 @@
 
 - **[obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam)** — Turns an iPhone into a low-latency OBS camera over the LAN.
 
-- **[turbo-agent-kit](https://github.com/ThomasHartDev/turbo-agent-kit)** — Turbo + pnpm monorepo for LLM agents: agent loop, pluggable providers, rate limiting, Redis state, SSE HTTP…
+- **[office-aesthetics](https://github.com/ThomasHartDev/office-aesthetics)** — Nuxt 3 SSR ecommerce store for home office furniture, with product variants, PayPal/Square/Amazon Pay…
 
-- **[chess-cameo](https://github.com/ThomasHartDev/chess-cameo)** — Render the exact board position at any percentage of a real chess.com game, as a recurring cameo for a…
+- **[neetcode-submissions](https://github.com/ThomasHartDev/neetcode-submissions)** — My NeetCode.io problem submissions
 
-- **[modern-frontend-lab](https://github.com/ThomasHartDev/modern-frontend-lab)** — Living reference of modern front-end technique in Next.js 15 + React 19: Server Components, streaming…
+- **[ml-from-scratch](https://github.com/ThomasHartDev/ml-from-scratch)** — Machine learning and deep learning building blocks from scratch in Python (numpy only): backprop…
 <!-- /RECENT_PROJECTS -->
 
 ### Stack
@@ -116,11 +116,5 @@
 **Links**
 
 [Blog](https://thomas-hart.com/blog) &nbsp;·&nbsp; [Portfolio](https://thomas-hart.com) &nbsp;·&nbsp; [Subsecond Studio](https://subsecondstudio.com) &nbsp;·&nbsp; [Repos](https://github.com/ThomasHartDev?tab=repositories)
-
-<!-- LATEST_POSTS -->
-- [My Freelance Client Onboarding to First Deploy](https://thomas-hart.com/blog/freelance-client-onboarding-first-deployed-commit) &nbsp;·&nbsp; <sub>Jul 2026</sub>
-- [How I Pool Postgres on Neon in Next.js App Router](https://thomas-hart.com/blog/pool-postgres-neon-nextjs-app-router) &nbsp;·&nbsp; <sub>Jul 2026</sub>
-- [What I charge for Next.js work in Utah and how I scope it](https://thomas-hart.com/blog/next-js-pricing-scoping-utah) &nbsp;·&nbsp; <sub>Jul 2026</sub>
-<!-- /LATEST_POSTS -->
 
 </div>

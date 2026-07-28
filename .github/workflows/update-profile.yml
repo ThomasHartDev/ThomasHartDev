@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Regenerate README from latest blog posts
+      - name: Regenerate README recent projects
         run: node scripts/update-feed.mjs
       - name: Commit if changed
         run: |
@@ -34,7 +34,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if ! git diff --quiet README.md; then
             git add README.md
-            git commit -m "chore: refresh latest writing"
+            git commit -m "chore: refresh recent projects"
             git push
           else
             echo "No change."
