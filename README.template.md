@@ -1,54 +1,46 @@
 <div align="center">
-
-<img src="./assets/banner-hero.svg" alt="Thomas Hart — Software Engineer, Subsecond Studio" width="100%" />
-
+  <img src="./assets/banner-hero.svg" alt="Thomas Hart — Software Engineer, Subsecond Studio" width="100%" />
 </div>
 
 <br />
 
-### Front-end Showstopper
+### Work
 
 <p align="center">
-  <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website — stillawebsite.com" width="68%" /></a><br />
-  <a href="https://stillawebsite.com"><strong>Still A Website</strong> ↗</a>
+  <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website" width="49%" /></a>&nbsp;
+  <a href="https://forbidden-street.com"><img src="./assets/work-fs.svg" alt="Forbidden Street" width="49%" /></a>
+</p>
+<p align="center">
+  <a href="https://stillawebsite.com">Still A Website</a>
+  &nbsp;·&nbsp;
+  <a href="https://forbidden-street.com">Forbidden Street</a>
 </p>
 
-### Selected work
+<p align="center">
+  <a href="https://atlas-photo.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="49%" /></a>&nbsp;
+  <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="49%" /></a>
+</p>
+<p align="center">
+  <a href="https://atlas-photo.com">Photo Atlas</a>
+  &nbsp;·&nbsp;
+  <a href="https://subsecondstudio.com">Subsecond Studio</a>
+</p>
 
-<table>
-  <tr>
-    <td width="33%" align="center">
-      <a href="https://forbidden-street.com"><img src="./assets/work-fs.svg" alt="Forbidden Street" width="100%" /></a><br />
-      <a href="https://forbidden-street.com"><strong>Forbidden Street</strong> ↗</a>
-    </td>
-    <td width="33%" align="center">
-      <a href="https://atlas-photo.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="100%" /></a><br />
-      <a href="https://atlas-photo.com"><strong>Photo Atlas</strong> ↗</a>
-    </td>
-    <td width="33%" align="center">
-      <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="100%" /></a><br />
-      <a href="https://subsecondstudio.com"><strong>Subsecond Studio</strong> ↗</a>
-    </td>
-  </tr>
-</table>
-
-### Recent projects
+### Projects
 
 <!-- RECENT_PROJECTS -->
 <!-- /RECENT_PROJECTS -->
 
 ### Stack
 
-**Languages**
-
+<sub>Languages</sub><br />
 ![TypeScript](https://img.shields.io/badge/TypeScript-0E1C2E?style=flat-square&logo=typescript&logoColor=3178C6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0E1C2E?style=flat-square&logo=javascript&logoColor=F7DF1E)
 ![Python](https://img.shields.io/badge/Python-0E1C2E?style=flat-square&logo=python&logoColor=3776AB)
 ![C++](https://img.shields.io/badge/C%2B%2B-0E1C2E?style=flat-square&logo=cplusplus&logoColor=00599C)
 ![SQL](https://img.shields.io/badge/SQL-0E1C2E?style=flat-square&logo=postgresql&logoColor=F3EDE3)
 
-**Frontend**
-
+<sub>Frontend</sub><br />
 ![Next.js](https://img.shields.io/badge/Next.js-0E1C2E?style=flat-square&logo=nextdotjs&logoColor=F3EDE3)
 ![React](https://img.shields.io/badge/React-0E1C2E?style=flat-square&logo=react&logoColor=61DAFB)
 ![Vue](https://img.shields.io/badge/Vue-0E1C2E?style=flat-square&logo=vuedotjs&logoColor=4FC08D)
@@ -58,16 +50,14 @@
 ![Framer%20Motion](https://img.shields.io/badge/Framer%20Motion-0E1C2E?style=flat-square&logo=framer&logoColor=F3EDE3)
 ![Three.js](https://img.shields.io/badge/Three.js-0E1C2E?style=flat-square&logo=threedotjs&logoColor=F3EDE3)
 
-**Backend**
-
+<sub>Backend</sub><br />
 ![Node.js](https://img.shields.io/badge/Node.js-0E1C2E?style=flat-square&logo=nodedotjs&logoColor=5FA04E)
 ![GraphQL](https://img.shields.io/badge/GraphQL-0E1C2E?style=flat-square&logo=graphql&logoColor=E10098)
 ![tRPC](https://img.shields.io/badge/tRPC-0E1C2E?style=flat-square&logo=trpc&logoColor=398CCB)
 ![Temporal](https://img.shields.io/badge/Temporal-0E1C2E?style=flat-square&logo=temporal&logoColor=F3EDE3)
 ![WebSockets](https://img.shields.io/badge/WebSockets-0E1C2E?style=flat-square&logoColor=F3EDE3)
 
-**Data**
-
+<sub>Data</sub><br />
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0E1C2E?style=flat-square&logo=postgresql&logoColor=F3EDE3)
 ![MongoDB](https://img.shields.io/badge/MongoDB-0E1C2E?style=flat-square&logo=mongodb&logoColor=47A248)
 ![Redis](https://img.shields.io/badge/Redis-0E1C2E?style=flat-square&logo=redis&logoColor=DC382D)
@@ -75,8 +65,7 @@
 ![Prisma](https://img.shields.io/badge/Prisma-0E1C2E?style=flat-square&logo=prisma&logoColor=F3EDE3)
 ![Drizzle](https://img.shields.io/badge/Drizzle-0E1C2E?style=flat-square&logoColor=C5F74F)
 
-**Infrastructure**
-
+<sub>Infrastructure</sub><br />
 ![Vercel](https://img.shields.io/badge/Vercel-0E1C2E?style=flat-square&logo=vercel&logoColor=F3EDE3)
 ![AWS](https://img.shields.io/badge/AWS-0E1C2E?style=flat-square&logo=amazonaws&logoColor=FF9900)
 ![GCP](https://img.shields.io/badge/GCP-0E1C2E?style=flat-square&logo=googlecloud&logoColor=4285F4)
@@ -85,8 +74,7 @@
 ![GitHub%20Actions](https://img.shields.io/badge/GitHub%20Actions-0E1C2E?style=flat-square&logo=githubactions&logoColor=2088FF)
 ![Electron](https://img.shields.io/badge/Electron-0E1C2E?style=flat-square&logo=electron&logoColor=47848F)
 
-**Tools**
-
+<sub>Tools</sub><br />
 ![Playwright](https://img.shields.io/badge/Playwright-0E1C2E?style=flat-square&logo=playwright&logoColor=B23A48)
 ![Vitest](https://img.shields.io/badge/Vitest-0E1C2E?style=flat-square&logo=vitest&logoColor=6E9F18)
 ![Zod](https://img.shields.io/badge/Zod-0E1C2E?style=flat-square&logo=zod&logoColor=3E67B1)
@@ -95,23 +83,22 @@
 ![Sharp](https://img.shields.io/badge/Sharp-0E1C2E?style=flat-square&logoColor=99CC00)
 ![pnpm](https://img.shields.io/badge/pnpm-0E1C2E?style=flat-square&logo=pnpm&logoColor=F69220)
 
-**AI**
-
+<sub>AI</sub><br />
 ![Claude](https://img.shields.io/badge/Claude-0E1C2E?style=flat-square&logo=anthropic&logoColor=F3EDE3)
 ![Grok](https://img.shields.io/badge/Grok-0E1C2E?style=flat-square&logo=x&logoColor=F3EDE3)
 ![Codex](https://img.shields.io/badge/Codex-0E1C2E?style=flat-square&logo=openai&logoColor=F3EDE3)
 ![Gemini](https://img.shields.io/badge/Gemini-0E1C2E?style=flat-square&logo=googlegemini&logoColor=8E75B2)
 
-### Reach me
-
-[thomashartdev@gmail.com](mailto:thomashartdev@gmail.com)
-
 ---
 
-<div align="center">
-
-**Links**
-
-[Blog](https://thomas-hart.com/blog) &nbsp;·&nbsp; [Portfolio](https://thomas-hart.com) &nbsp;·&nbsp; [Subsecond Studio](https://subsecondstudio.com) &nbsp;·&nbsp; [Repos](https://github.com/ThomasHartDev?tab=repositories)
-
-</div>
+<p align="center">
+  <a href="mailto:thomashartdev@gmail.com">thomashartdev@gmail.com</a>
+  &nbsp;·&nbsp;
+  <a href="https://thomas-hart.com/blog">Blog</a>
+  &nbsp;·&nbsp;
+  <a href="https://thomas-hart.com">Portfolio</a>
+  &nbsp;·&nbsp;
+  <a href="https://subsecondstudio.com">Studio</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/ThomasHartDev?tab=repositories">Repos</a>
+</p>
