@@ -6,13 +6,11 @@
 
 <br />
 
-### Frontend Showstopper
+### Featured
 
-<div align="center">
-
-[![stillawebsite.com](https://img.shields.io/badge/%E2%96%B6%20stillawebsite.com-Frontend%20Showstopper-B23A48?style=for-the-badge&labelColor=0E1C2E)](https://stillawebsite.com)
-
-</div>
+<p align="center">
+  <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website — stillawebsite.com" width="68%" /></a>
+</p>
 
 ### Selected work
 
