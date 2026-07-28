@@ -104,7 +104,4 @@
 
 [Blog](https://thomas-hart.com/blog) &nbsp;·&nbsp; [Portfolio](https://thomas-hart.com) &nbsp;·&nbsp; [Subsecond Studio](https://subsecondstudio.com) &nbsp;·&nbsp; [Repos](https://github.com/ThomasHartDev?tab=repositories)
 
-<!-- LATEST_POSTS -->
-<!-- /LATEST_POSTS -->
-
 </div>

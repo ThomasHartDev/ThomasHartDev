@@ -190,12 +190,3 @@ export function renderRecentProjects(opts = {}) {
   return "- More on [thomas-hart.com](https://thomas-hart.com)";
 }
 
-/**
- * Compact footer list of latest posts (or empty string when none).
- * @param {{ title: string, url: string, date: string }[]} posts
- * @returns {string}
- */
-export function renderLatestPosts(posts) {
-  if (!posts.length) return "";
-  return posts.map((p) => `- [${p.title}](${p.url}) &nbsp;·&nbsp; <sub>${p.date}</sub>`).join("\n");
-}
