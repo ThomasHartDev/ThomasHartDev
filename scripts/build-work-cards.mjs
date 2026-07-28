@@ -94,6 +94,14 @@ async function makeAnimatedSvg(c) {
 
 const cards = [
   {
+    input: path.join(root, "assets/sources/stilla-hero.png"),
+    title: "Still A Website",
+    url: "https://stillawebsite.com",
+    accent: "#7CF29C",
+    outName: "work-stilla.svg",
+    pngName: "work-stilla.png",
+  },
+  {
     input: path.join(root, "assets/sources/fs-hero.png"),
     title: "Forbidden Street",
     url: "https://forbidden-street.com",
