@@ -50,6 +50,8 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-0E1C2E?style=flat-square&logo=typescript&logoColor=3178C6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0E1C2E?style=flat-square&logo=javascript&logoColor=F7DF1E)
 ![Python](https://img.shields.io/badge/Python-0E1C2E?style=flat-square&logo=python&logoColor=3776AB)
+![Java](https://img.shields.io/badge/Java-0E1C2E?style=flat-square&logo=openjdk&logoColor=ED8B00)
+![C](https://img.shields.io/badge/C-0E1C2E?style=flat-square&logo=c&logoColor=A8B9CC)
 ![C++](https://img.shields.io/badge/C%2B%2B-0E1C2E?style=flat-square&logo=cplusplus&logoColor=00599C)
 ![SQL](https://img.shields.io/badge/SQL-0E1C2E?style=flat-square&logo=postgresql&logoColor=F3EDE3)
 
