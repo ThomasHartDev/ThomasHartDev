@@ -52,7 +52,7 @@ const ulLen = ulX2 - ulX1;
 const sweepX0 = wm.x0 - 260;
 const sweepX1 = wm.x0 + wm.width + 60;
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" role="img" aria-label="Thomas Hart — Software Engineer, Subsecond Studio">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" role="img" aria-label="Thomas Hart — Software Engineer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="${C.navyTop}"/>
@@ -83,7 +83,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
 
   <!-- eyebrow -->
   <text x="${W / 2}" y="88" text-anchor="middle" fill="${C.muted}"
-        font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="19" letter-spacing="7">SOFTWARE ENGINEER  ·  SUBSECOND STUDIO</text>
+        font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="19" letter-spacing="7">SOFTWARE ENGINEER</text>
 
   <!-- wordmark (Fraunces Black, baked to paths); a light sweep runs across the letters -->
   <path d="${wm.d}" fill="${C.ink}"/>
