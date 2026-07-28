@@ -157,7 +157,7 @@ export function shortenBlurb(text, max = 110) {
  * @returns {string}
  */
 export function renderFlagship(list = FLAGSHIP) {
-  return list.map((f) => `- **[${f.name}](${f.url})** — ${shortenBlurb(f.blurb)}`).join("\n\n");
+  return list.map((f) => `- **[${f.name}](${f.url})** — ${shortenBlurb(f.blurb)}`).join("\n");
 }
 
 /**
@@ -171,11 +171,11 @@ export function renderRecent(repos) {
       const blurb = shortenBlurb(r.description || r.language || "recently pushed");
       return `- **[${r.name}](${r.html_url})** — ${blurb}`;
     })
-    .join("\n\n");
+    .join("\n");
 }
 
 /**
- * Single "Recent projects" block: curated flagship first, then freshly shipped.
+ * Single projects block: curated flagship first, then freshly shipped.
  * @param {{ flagship?: Flagship[], recent?: Repo[] }} [opts]
  * @returns {string}
  */
@@ -184,7 +184,7 @@ export function renderRecentProjects(opts = {}) {
   const recent = opts.recent ?? [];
   const head = renderFlagship(flagship);
   const tail = renderRecent(recent);
-  if (head && tail) return `${head}\n\n${tail}`;
+  if (head && tail) return `${head}\n${tail}`;
   if (head) return head;
   if (tail) return tail;
   return "- More on [thomas-hart.com](https://thomas-hart.com)";

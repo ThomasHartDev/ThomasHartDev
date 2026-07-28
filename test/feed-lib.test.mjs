@@ -97,7 +97,7 @@ describe("renderRecent", () => {
       repo({ name: "with-desc", description: "does a thing" }),
       repo({ name: "lang-only", description: null, language: "Rust" }),
       repo({ name: "bare", description: null, language: null }),
-    ]).split("\n\n");
+    ]).split("\n");
     expect(lines[0]).toContain("does a thing");
     expect(lines[1]).toContain("Rust");
     expect(lines[2]).toContain("recently pushed");
@@ -112,7 +112,7 @@ describe("renderRecent", () => {
 
 describe("renderFlagship", () => {
   it("emits one link line per repo with its blurb", () => {
-    const lines = renderFlagship().split("\n\n");
+    const lines = renderFlagship().split("\n");
     expect(lines).toHaveLength(FLAGSHIP.length);
     for (const f of FLAGSHIP) {
       expect(renderFlagship()).toContain(`[${f.name}](${f.url})`);
@@ -129,7 +129,7 @@ describe("renderRecentProjects", () => {
       ],
       recent: [repo({ name: "fresh", description: "just shipped", pushed_at: "2026-01-02T00:00:00Z" })],
     });
-    const lines = out.split("\n\n");
+    const lines = out.split("\n");
     expect(lines[0]).toContain("alpha");
     expect(lines[1]).toContain("beta");
     expect(lines[2]).toContain("fresh");

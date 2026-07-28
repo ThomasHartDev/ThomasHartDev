@@ -8,7 +8,8 @@
 
 - `<!-- RECENT_PROJECTS -->` — curated flagship repos first, then the most recently pushed public repos (minus forks, archived, and anything already listed as flagship so nothing shows twice).
 
-The footer is a static Links row only (Blog / Portfolio / Studio / Repos). No per-post blog list.
+Footer is one quiet centered line (email · Blog · Portfolio · Studio · Repos).
+Work is a 2×2 screenshot grid (no table borders, no marketing section labels).
 
 The selection and rendering rules live in `scripts/feed-lib.mjs` as pure functions (`selectRecent`, `renderFlagship`, `renderRecent`, `renderRecentProjects`, `relDate`) so they can be unit tested without network access. `update-feed.mjs` keeps only the I/O (fetch, file read/write).
 
@@ -37,10 +38,9 @@ pnpm run plan:pins    # needs gh authenticated
 
 ## What's implemented
 
-- Static footer Links row (Blog · Portfolio · Subsecond Studio · Repos).
-- Merged "Recent projects" section (curated + auto recent, deduped).
-- Selected work cards linking to live sites (SVG with SMIL pulse).
-- Expanded stack badges.
+- Banner + unified Work grid (4 live site cards) + Projects list + Stack + footer.
+- Projects block: curated flagship + auto recent (tight single-spaced bullets).
+- Work cards: SVG tiles with SMIL border pulse (`scripts/build-work-cards.mjs`).
 - Animated banner build (`scripts/build-banner.mjs`).
 - Pin planner that scores repos over the gh GraphQL API and prints the six strongest to pin.
 
