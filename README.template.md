@@ -4,6 +4,12 @@
 
 <br />
 
+<p align="center">
+  I'm a software engineer and BYU alum. I specialize in building lightning-fast web apps with TypeScript, React, SQL, and many other tools (listed below). My corporate + agency work has reached over 100 million users and counting.
+</p>
+
+<br />
+
 ### Work
 
 <p align="center">
