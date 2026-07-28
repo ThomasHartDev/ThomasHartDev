@@ -10,7 +10,7 @@
 
 <br />
 
-### Work
+### Featured Work
 
 <p align="center">
   <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website" width="49%" /></a>&nbsp;

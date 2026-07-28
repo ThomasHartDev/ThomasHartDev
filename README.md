@@ -10,7 +10,7 @@
 
 <br />
 
-### Work
+### Featured Work
 
 <p align="center">
   <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website" width="49%" /></a>&nbsp;
@@ -39,9 +39,9 @@
 - **[airlock](https://github.com/ThomasHartDev/airlock)** — Ephemeral zero-credential sandbox for untrusted or agent-generated code, with self-verifying execution.
 - **[image-processing](https://github.com/ThomasHartDev/image-processing)** — Sharp optimizer that binary-searches encoder quality against an SSIM target.
 - **[obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam)** — Turns an iPhone into a low-latency OBS camera over the LAN.
+- **[modern-frontend-lab](https://github.com/ThomasHartDev/modern-frontend-lab)** — Living Next.js 15 + React 19 lab: Server Components, streaming, optimistic UI, state, virtualization, Core…
 - **[neetcode-submissions](https://github.com/ThomasHartDev/neetcode-submissions)** — My NeetCode.io problem submissions
 - **[office-aesthetics](https://github.com/ThomasHartDev/office-aesthetics)** — Nuxt 3 SSR ecommerce store for home office furniture, with product variants, PayPal/Square/Amazon Pay…
-- **[ml-from-scratch](https://github.com/ThomasHartDev/ml-from-scratch)** — Machine learning and deep learning building blocks from scratch in Python (numpy only): backprop…
 <!-- /RECENT_PROJECTS -->
 
 ### Stack
