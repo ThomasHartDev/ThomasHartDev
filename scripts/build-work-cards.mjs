@@ -110,15 +110,15 @@ const cards = [
     pngName: "work-fs.png",
   },
   {
-    input: path.join(root, "assets/sources/pa-hero.webp"),
+    input: path.join(root, "assets/sources/pa-hero.png"),
     title: "Photo Atlas",
-    url: "https://photo-atlas.com",
+    url: "https://atlas-photo.com",
     accent: "#2F6FED",
     outName: "work-photo-atlas.svg",
     pngName: "work-photo-atlas.png",
   },
   {
-    input: path.join(root, "assets/sources/ss-hero.webp"),
+    input: path.join(root, "assets/sources/ss-hero.png"),
     title: "Subsecond Studio",
     url: "https://subsecondstudio.com",
     accent: "#C45C26",

@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website — stillawebsite.com" width="68%" /></a><br />
-  <a href="https://stillawebsite.com"><strong>Still A Website</strong> ↗ stillawebsite.com</a>
+  <a href="https://stillawebsite.com"><strong>Still A Website</strong> ↗</a>
 </p>
 
 ### Selected work
@@ -22,8 +22,8 @@
       <a href="https://forbidden-street.com"><strong>Forbidden Street</strong> ↗</a>
     </td>
     <td width="33%" align="center">
-      <a href="https://photo-atlas.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="100%" /></a><br />
-      <a href="https://photo-atlas.com"><strong>Photo Atlas</strong> ↗</a>
+      <a href="https://atlas-photo.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="100%" /></a><br />
+      <a href="https://atlas-photo.com"><strong>Photo Atlas</strong> ↗</a>
     </td>
     <td width="33%" align="center">
       <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="100%" /></a><br />

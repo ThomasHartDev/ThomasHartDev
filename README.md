@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website — stillawebsite.com" width="68%" /></a><br />
-  <a href="https://stillawebsite.com"><strong>Still A Website</strong> ↗ stillawebsite.com</a>
+  <a href="https://stillawebsite.com"><strong>Still A Website</strong> ↗</a>
 </p>
 
 ### Selected work
@@ -22,8 +22,8 @@
       <a href="https://forbidden-street.com"><strong>Forbidden Street</strong> ↗</a>
     </td>
     <td width="33%" align="center">
-      <a href="https://photo-atlas.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="100%" /></a><br />
-      <a href="https://photo-atlas.com"><strong>Photo Atlas</strong> ↗</a>
+      <a href="https://atlas-photo.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="100%" /></a><br />
+      <a href="https://atlas-photo.com"><strong>Photo Atlas</strong> ↗</a>
     </td>
     <td width="33%" align="center">
       <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="100%" /></a><br />
@@ -43,9 +43,9 @@
 
 - **[obs-phone-cam](https://github.com/ThomasHartDev/obs-phone-cam)** — Turns an iPhone into a low-latency OBS camera over the LAN.
 
-- **[office-aesthetics](https://github.com/ThomasHartDev/office-aesthetics)** — Nuxt 3 SSR ecommerce store for home office furniture, with product variants, PayPal/Square/Amazon Pay…
-
 - **[neetcode-submissions](https://github.com/ThomasHartDev/neetcode-submissions)** — My NeetCode.io problem submissions
+
+- **[office-aesthetics](https://github.com/ThomasHartDev/office-aesthetics)** — Nuxt 3 SSR ecommerce store for home office furniture, with product variants, PayPal/Square/Amazon Pay…
 
 - **[ml-from-scratch](https://github.com/ThomasHartDev/ml-from-scratch)** — Machine learning and deep learning building blocks from scratch in Python (numpy only): backprop…
 <!-- /RECENT_PROJECTS -->
