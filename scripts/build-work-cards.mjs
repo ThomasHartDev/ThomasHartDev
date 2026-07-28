@@ -94,7 +94,7 @@ async function makeAnimatedSvg(c) {
 
 const cards = [
   {
-    input: "/tmp/profile-cards/fs-hero.png",
+    input: path.join(root, "assets/sources/fs-hero.png"),
     title: "Forbidden Street",
     url: "https://forbidden-street.com",
     accent: "#B23A48",
@@ -102,7 +102,7 @@ const cards = [
     pngName: "work-forbidden-street.png",
   },
   {
-    input: "/tmp/profile-cards/pa-hero.webp",
+    input: path.join(root, "assets/sources/pa-hero.webp"),
     title: "Photo Atlas",
     url: "https://photo-atlas.com",
     accent: "#2F6FED",
@@ -110,7 +110,7 @@ const cards = [
     pngName: "work-photo-atlas.png",
   },
   {
-    input: "/tmp/profile-cards/ss-hero.webp",
+    input: path.join(root, "assets/sources/ss-hero.webp"),
     title: "Subsecond Studio",
     url: "https://subsecondstudio.com",
     accent: "#C45C26",
