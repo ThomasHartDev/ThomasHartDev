@@ -6,19 +6,31 @@
 
 <br />
 
-### Featured
+### Front-end Showstopper
 
 <p align="center">
-  <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website — stillawebsite.com" width="68%" /></a>
+  <a href="https://stillawebsite.com"><img src="./assets/work-stilla.svg" alt="Still A Website — stillawebsite.com" width="68%" /></a><br />
+  <a href="https://stillawebsite.com"><strong>Still A Website</strong> ↗ stillawebsite.com</a>
 </p>
 
 ### Selected work
 
-<p align="center">
-  <a href="https://forbidden-street.com"><img src="./assets/work-fs.svg" alt="Forbidden Street" width="32%" /></a>
-  <a href="https://photo-atlas.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="32%" /></a>
-  <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="32%" /></a>
-</p>
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <a href="https://forbidden-street.com"><img src="./assets/work-fs.svg" alt="Forbidden Street" width="100%" /></a><br />
+      <a href="https://forbidden-street.com"><strong>Forbidden Street</strong> ↗</a>
+    </td>
+    <td width="33%" align="center">
+      <a href="https://photo-atlas.com"><img src="./assets/work-photo-atlas.svg" alt="Photo Atlas" width="100%" /></a><br />
+      <a href="https://photo-atlas.com"><strong>Photo Atlas</strong> ↗</a>
+    </td>
+    <td width="33%" align="center">
+      <a href="https://subsecondstudio.com"><img src="./assets/work-subsecond-studio.svg" alt="Subsecond Studio" width="100%" /></a><br />
+      <a href="https://subsecondstudio.com"><strong>Subsecond Studio</strong> ↗</a>
+    </td>
+  </tr>
+</table>
 
 ### Recent projects
 
