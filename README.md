@@ -5,7 +5,7 @@
 <br />
 
 <p align="center">
-  I'm a software engineer and BYU alum. I specialize in building lightning-fast web apps with TypeScript, React, SQL, and many other tools (listed below). I've shipped production software across ecommerce and SaaS teams, including as Lead Software Engineer at Subsecond Studio. That work has reached over 100 million users and counting.
+  I'm a software engineer and BYU alum. I specialize in building lightning-fast web apps with TypeScript, React, SQL, and many other tools (listed below). I've shipped production software across ecommerce and SaaS teams. That work has reached over 100 million users and counting.
 </p>
 
 <br />
